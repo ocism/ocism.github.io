@@ -1,5 +1,6 @@
 body {
     background: #13131B;
+    font: 14pt 'Roboto', Arial, sans-serif;
 }
 
 #wreath {
@@ -23,4 +24,13 @@ body {
     .wreath2 {
         border: #ffffff 4px dotted;
         opacity: 1;
+        text-align: center;
+        color: #ffffff;
     }
+
+#rhodesIsland {
+    font: 30pt 'Literata', Times, serif;
+}
+#operatorsDirectory {
+    font: 15pt 'Literata', Times, serif;
+}
