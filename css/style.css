@@ -1,0 +1,26 @@
+body {
+    background: #13131B;
+}
+
+#wreath {
+    width: 25vw;
+    height: 25vw;
+    margin-top: 50px;
+}
+
+.wreath1, .wreath2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+    .wreath1 {
+        border: #ffffff 4px dashed;
+        padding: 20px;
+        opacity: 0.5;
+    }
+
+    .wreath2 {
+        border: #ffffff 4px dotted;
+        opacity: 1;
+    }
