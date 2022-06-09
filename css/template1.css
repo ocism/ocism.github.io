@@ -70,6 +70,16 @@ body {
     letter-spacing: 0.5pt   !important;
 }
 
+.opQuote {
+    width: 70%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 #container #mainBody {
     background: #ffffff;
     width: 80vw;
