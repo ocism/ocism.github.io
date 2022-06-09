@@ -65,15 +65,15 @@ body {
 }
 
 .opHeader {
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 20px  !important;
+    border-radius: 5px  !important;
 }
 
 #container #mainBody {
     background: #ffffff;
     width: 80vw;
     padding: 20px;
-    padding-top: calc(65vh + 20px);
+    padding-top: calc(65vh + 20px)  !important;
     border-radius: 3px;
 }
 
