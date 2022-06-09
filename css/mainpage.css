@@ -149,14 +149,14 @@ body {
 }
 
 .readInfo {
-    height: 1rem !important;
-    margin-top: 10px !important;
-    font: 9pt 'Roboto', Arial, sans-serif !important; 
-    text-transform: uppercase !important;
-    letter-spacing: 0.5pt !important;
-    border-top: 1px solid lightgray !important;
-    padding: 5px 0px !important;
-    box-sizing: content-box !important;
+    height: 1rem                           !important;
+    margin-top: 10px                       !important;
+    font: 9pt 'Roboto', Arial, sans-serif  !important; 
+    text-transform: uppercase              !important;
+    letter-spacing: 0.5pt                  !important;
+    border-top: 1px solid lightgray      !important;
+    padding: 5px 0px                       !important;
+    box-sizing: content-box                !important;
 }
 
 #footer {

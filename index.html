@@ -3,6 +3,7 @@
 <head>
 
 <title>Rhodes Island OCs</title>
+<!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -39,6 +40,77 @@
     <div class="mx-auto" id="mainBody">
 <!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE I FUCKING BEG YOU -->
 
+<!-- ** HOW TO ADD NEW OPERATORS: **
+Copy the following code template (lines 46-61) and paste under the right rarity section
+
+<div class="col-sm-6 col-md-6 col-lg-2">
+    <div class="charTile" style="background-image: url('images/placeholder.png');
+        background-size: 500%;
+        background-position: center;
+        ">
+        <div class="charInfo"><div class="charHover">
+            <div class="mx-auto d-flex align-items-center charArchetype">
+                <img src="images/assets/ARCHETYPE.png" />
+            </div>
+            <div class="charName">
+                operator name
+                <div class="readInfo">read data</div>
+            </div>
+        </div></div>
+    </div>
+</div>
+
+--
+
+CHANGING YOUR OPERATOR IMAGE
+-
+(1) Upload your image into the `images` folder. Please rename your image to fit the
+    following format:    THUMB_operatorname
+    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
+
+(2) Change the background picture by replacing `placaeholder.png` (second line of the
+    template, or line 47 above) with your image file
+
+(3) Adjust the value of `500%` (third line of the template, or line 48 above) to a zoom
+    of your choice for the image. If you wish your image to be at full size by default,
+    delete this line and ONLY this line in its entirely
+    - NOTE: the percentage listed is actually NOT the zoom of your image itself; you can
+            consider the value to be arbitrary
+
+(4) By default, the crop will be around the very center of your image. If you wish to
+    keep it this way, please leave the fourth line of the template, or line 49 above
+    alone. Otherwise, you can change `center` to one of the following to adjust the crop:
+    * left top          * left center
+    * left bottom       * right top
+    * right center      * right bottom
+    * center top        * center bottom
+    - NOTE: If none of the above crops are to your liking, you may replace it with:
+            xx% yy%
+            where `xx%` indicates the horizontal placement and`yy%` indicates the vertical
+            placement from the top left corner of the image (e.g. 30% right from the top
+            left, 60% down from the top left)
+
+--
+
+CHANGING YOUR OPERATOR CLASS/ARCHETYPE
+-
+(1) Change `ARCHETYPE` (eigth line of the template, or line 53 above) to the name of your
+    operator archetype. You can see all possible archetypes icons within the `assets` folder
+    located inside the `images` folder.
+    - NOTE: if you do not know the archetype of your operator, you can simply make this icon
+            their overall class. These icons are named after the following convention:
+            class_name.png
+
+--
+
+CHANGING YOUR OPERATOR NAME
+-
+(1) Change `operator name` (eleventh line of the template, or line 57 above) to your operator's
+    chosen name.
+
+-->
+
+        <!-- FOUR STAR RARITY OPERATORS -->
         <div class="rarity">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -48,84 +120,18 @@
 
         <div class="row g-3">
 
+            <!-- SAMPLE OPERATOR TILE -->
             <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
+                <div class="charTile" style="background-image: url('images/THUMB_indigo.png');
+                    background-size: 400%;
+                    background-position: center;
+                    ">
                     <div class="charInfo"><div class="charHover">
                         <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/reaper.png" />
+                            <img src="images/assets/mystic.png" />
                         </div>
                         <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/bard.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/artsfghter.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/dollkeeper.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/fearless.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/geek.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
+                            Indigo
                             <div class="readInfo">read data</div>
                         </div>
                     </div></div>
@@ -134,6 +140,7 @@
 
         </div> <!-- end 4 star rarity cards -->
 
+        <!-- FIVE STAR RARITY OPERATORS -->
         <div class="rarity">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -144,14 +151,18 @@
 
         <div class="row g-3">
 
+            <!-- SAMPLE OPERATOR TILE -->
             <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
+                <div class="charTile" style="background-image: url('images/THUMB_tequila.png');
+                    background-size: 600%;
+                    background-position: 46% 31%;
+                    ">
                     <div class="charInfo"><div class="charHover">
                         <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/summoner.png" />
+                            <img src="images/assets/liberator.png" />
                         </div>
                         <div class="charName">
-                            operator name
+                            Tequila
                             <div class="readInfo">read data</div>
                         </div>
                     </div></div>
@@ -160,6 +171,7 @@
 
         </div> <!-- end 5 star rarity cards -->
 
+        <!-- SIX STAR RARITY OPERATORS -->
         <div class="rarity">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -176,34 +188,6 @@
                     <div class="charInfo"><div class="charHover">
                         <div class="mx-auto d-flex align-items-center charArchetype">
                             <img src="images/assets/trapper.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/siegesniper.png" />
-                        </div>
-                        <div class="charName">
-                            operator name
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/placeholder.png');">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/ringhealer.png" />
                         </div>
                         <div class="charName">
                             operator name
