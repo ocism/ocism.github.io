@@ -1,6 +1,6 @@
 body {
     background: #13131B;
-    font: 11pt 'Roboto', Arial, sans-serif;
+    font: 11.5pt 'Roboto', Arial, sans-serif;
     color: #000000;
     overflow-x: hidden;
 }
@@ -96,12 +96,12 @@ blockquote {
 }
 
 #opName {
-    font: 50pt 'Literata', Times, serif;
+    font: 60pt 'Literata', Times, serif;
 }
 
 .subtitle {
     margin-top: 100px;
-    font: 40pt 'Literata', Times, serif;
+    font: 35pt 'Literata', Times, serif;
 }
 
 th, .header {
