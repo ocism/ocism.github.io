@@ -1,16 +1,22 @@
 body {
     background: #13131B;
-    font: 14pt 'Roboto', Arial, sans-serif;
+    font: 13pt 'Roboto', Arial, sans-serif;
     color: #000000;
     overflow-x: hidden;
+}
+
+#wreathCont {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 5vh;
+    position: absolute;
+    z-index: -1;
 }
 
 #wreath {
     width: 100vw;
     height: 100vw;
-    margin-top: 5vh;
-    position: absolute;
-    z-index: -1;
 }
 
 .wreath1, .wreath2 {
@@ -33,7 +39,6 @@ body {
     }
 
 #header {
-    /* margin-top: -35%; */
     width: 100vw;
     margin-top: 20vh;
     color: #ffffff;
@@ -72,16 +77,21 @@ body {
 #container #mainBody {
     background: #ffffff;
     width: 90vw;
-    padding: 20px;
-    border-radius: 0px 0px 3px 3px;
+    padding: 20px 20px 50px 20px;
 }
 
 .rarity {
     background: #657178;
+    margin-top: 60px;
+    margin-bottom: 20px;
     padding: 10px;
     color: #FFE6C1;
     border-radius: 3px;
 }
+
+    .rarity:first-child {
+        margin-top: 0px;
+    }
 
 .charTile {
     background-position: center;
@@ -100,11 +110,32 @@ body {
     padding: 10px;
 }
 
+.charArchetype {
+    background: #000000;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 4px solid #ffffff;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+}
+
+    .charArchetype img {
+        width: 100%;
+    }
+
 .charName {
     background: #ffffff;
-    padding: 10px;
-    box-sizing: border-box;
+    margin-top: -25px;
+    padding: 25px 10px 10px 10px;
     font-family: 'Literata', Times, serif;
     text-align: center;
     border-radius: 3px;
+}
+
+#footer {
+    background: #f2f2f2;
+    width: 90vw;
+    padding: 50px 20px;
 }
