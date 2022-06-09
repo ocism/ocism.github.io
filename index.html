@@ -24,7 +24,7 @@
 
 <div id="wreathCont">
     <div id="wreath">
-        <div class="wreath1 mx-auto">
+        <div class="mx-auto wreath1">
             <div class="wreath2"></div>
         </div>
     </div>
@@ -41,24 +41,35 @@
 <!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE I FUCKING BEG YOU -->
 
 <!-- ** HOW TO ADD NEW OPERATORS: **
-Copy the following code template (lines 46-61) and paste under the right rarity section
+Copy the following code template (lines 46-62) and paste under the right rarity section
 
 <div class="col-sm-6 col-md-6 col-lg-2">
-    <div class="charTile" style="background-image: url('images/placeholder.png');
-        background-size: 500%;
-        background-position: center;
-        ">
-        <div class="charInfo"><div class="charHover">
-            <div class="mx-auto d-flex align-items-center charArchetype">
-                <img src="images/assets/ARCHETYPE.png" />
-            </div>
-            <div class="charName">
-                operator name
-                <div class="readInfo">read data</div>
-            </div>
-        </div></div>
-    </div>
+    <a href="operator-pages/OPERATORNAME.html">
+        <div class="charTile" style="background-image: url('images/placeholder.png');
+            background-size: 500%;
+            background-position: center;
+            ">
+            <div class="charInfo"><div class="charHover">
+                <div class="mx-auto d-flex align-items-center charArchetype">
+                    <img src="images/assets/ARCHETYPE.png" />
+                </div>
+                <div class="charName">
+                    operator name
+                    <div class="readInfo">read data</div>
+                </div>
+            </div></div>
+        </div>
+    </a>
 </div>
+
+--
+
+LINKING THE TILE TO YOUR OPERATOR PAGE
+(1) Create your operator's page and copying either `template1.html` or `template2.html`.
+    Please rename your file to fit the following format:    operatorname.html
+
+(2) Change `OPERATORNAME` (second line of the template, or line 47 above) to your
+    operator's name. This should match the file name from step (1)
 
 --
 
@@ -68,17 +79,17 @@ CHANGING YOUR OPERATOR IMAGE
     following format:    THUMB_operatorname
     - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
 
-(2) Change the background picture by replacing `placaeholder.png` (second line of the
-    template, or line 47 above) with your image file
+(2) Change the background picture by replacing `placaeholder.png` (third line of the
+    template, or line 48 above) with your image file
 
-(3) Adjust the value of `500%` (third line of the template, or line 48 above) to a zoom
+(3) Adjust the value of `500%` (fourth line of the template, or line 49 above) to a zoom
     of your choice for the image. If you wish your image to be at full size by default,
     delete this line and ONLY this line in its entirely
     - NOTE: the percentage listed is actually NOT the zoom of your image itself; you can
             consider the value to be arbitrary
 
 (4) By default, the crop will be around the very center of your image. If you wish to
-    keep it this way, please leave the fourth line of the template, or line 49 above
+    keep it this way, please leave the fifth line of the template, or line 50 above
     alone. Otherwise, you can change `center` to one of the following to adjust the crop:
     * left top          * left center
     * left bottom       * right top
@@ -94,18 +105,18 @@ CHANGING YOUR OPERATOR IMAGE
 
 CHANGING YOUR OPERATOR CLASS/ARCHETYPE
 -
-(1) Change `ARCHETYPE` (eigth line of the template, or line 53 above) to the name of your
-    operator archetype. You can see all possible archetypes icons within the `assets` folder
-    located inside the `images` folder.
-    - NOTE: if you do not know the archetype of your operator, you can simply make this icon
-            their overall class. These icons are named after the following convention:
+(1) Change `ARCHETYPE` (nineth line of the template, or line 54 above) to the name of
+    your operator archetype. You can see all possible archetypes icons within the `assets`
+    folder located inside the `images` folder.
+    - NOTE: if you do not know the archetype of your operator, you can simply make this
+            icon their overall class. These icons are named after the following convention:
             class_name.png
 
 --
 
 CHANGING YOUR OPERATOR NAME
 -
-(1) Change `operator name` (eleventh line of the template, or line 57 above) to your operator's
+(1) Change `operator name` (twelfth line of the template, or line 57 above) to your operator's
     chosen name.
 
 -->
@@ -122,20 +133,22 @@ CHANGING YOUR OPERATOR NAME
 
             <!-- SAMPLE OPERATOR TILE -->
             <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/THUMB_indigo.png');
-                    background-size: 400%;
-                    background-position: center;
-                    ">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/mystic.png" />
-                        </div>
-                        <div class="charName">
-                            Indigo
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
+                <a href="operator-pages/indigo.html">
+                    <div class="charTile" style="background-image: url('images/THUMB_indigo.png');
+                        background-size: 400%;
+                        background-position: center;
+                        ">
+                        <div class="charInfo"><div class="charHover">
+                            <div class="mx-auto d-flex align-items-center charArchetype">
+                                <img src="images/assets/mystic.png" />
+                            </div>
+                            <div class="charName">
+                                Indigo
+                                <div class="readInfo">read data</div>
+                            </div>
+                        </div></div>
+                    </div>
+                </a>
             </div>
 
             <!-- PASTE NEW FOUR STAR OPERATORS DOWN HERE -->
@@ -158,20 +171,22 @@ CHANGING YOUR OPERATOR NAME
 
             <!-- SAMPLE OPERATOR TILE -->
             <div class="col-sm-6 col-md-6 col-lg-2">
-                <div class="charTile" style="background-image: url('images/THUMB_tequila.png');
-                    background-size: 600%;
-                    background-position: 46% 31%;
-                    ">
-                    <div class="charInfo"><div class="charHover">
-                        <div class="mx-auto d-flex align-items-center charArchetype">
-                            <img src="images/assets/liberator.png" />
-                        </div>
-                        <div class="charName">
-                            Tequila
-                            <div class="readInfo">read data</div>
-                        </div>
-                    </div></div>
-                </div>
+                <a href="operator-pages/tequila.html">
+                    <div class="charTile" style="background-image: url('images/THUMB_tequila.png');
+                        background-size: 600%;
+                        background-position: 46% 31%;
+                        ">
+                        <div class="charInfo"><div class="charHover">
+                            <div class="mx-auto d-flex align-items-center charArchetype">
+                                <img src="images/assets/liberator.png" />
+                            </div>
+                            <div class="charName">
+                                Tequila
+                                <div class="readInfo">read data</div>
+                            </div>
+                        </div></div>
+                    </div>
+                </a>
             </div>
 
             <!-- PASTE NEW FIVE STAR OPERATORS DOWN HERE -->
@@ -212,12 +227,20 @@ CHANGING YOUR OPERATOR NAME
 
             <!-- DO NOT PASTE PAST THIS LINE -->
         
+<!-- DO NOT CHANGE ANYTHING PAST THIS LINE -->
+
         </div> <!-- end 6 star rarity cards -->
 
     </div><!-- mainBody DIV -->
 
     <div class="mx-auto" id="footer">
-        Disclaimer goes here
+        <p><strong>Created with love by <a href="https://github.com/soupbara/">soupbara</a></strong></p>
+        
+        <p>Rhodes Island Operator Directory is not affiliated with nor endorsed by Arknights, Hypergryph,
+        Studio Montagne, or Yostar.
+        <br />
+        All assets that are not original are courtesy of <a href="https://github.com/Aceship/AN-EN-Tags/">Aceship</a>,
+        and are the property of Hypergryph and Yostar.</p>
     </div> <!-- footer DIV -->
 
 </div> <!-- container DIV -->

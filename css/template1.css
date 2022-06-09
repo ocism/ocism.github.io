@@ -1,0 +1,67 @@
+body {
+    background: #13131B;
+    font: 13pt 'Roboto', Arial, sans-serif;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+#wreathCont {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 5vh;
+    position: absolute;
+    z-index: -1;
+}
+
+#wreath {
+    width: 100vw;
+    height: 100vw;
+}
+
+.wreath1, .wreath2 {
+    border-radius: 100%;
+}
+
+    .wreath1 {
+        width: 30%;
+        height: 30%;
+        border: #ffffff 4px dashed;
+        padding: 1.5%;
+        opacity: 0.25;
+    }
+
+    .wreath2 {
+        width: 100%;
+        height: 100%;
+        border: #ffffff 4px dotted;
+        opacity: 1;
+    }
+
+#operator {
+    width: 100vw;
+    margin-top: 20vh;
+    float: left;
+}
+
+#container {
+    width: 100vw;
+    min-height: 10px;
+    margin-top: 5vh;
+    float: left;
+}
+
+#main-sprite {
+    width: 50%;
+}
+
+    #main-sprite img {
+        width: 100%;
+    }
+
+#container #mainBody {
+    background: #ffffff;
+    width: 90vw;
+    padding: 20px;
+    border-radius: 3px;
+}
