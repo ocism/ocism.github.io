@@ -5,6 +5,13 @@ body {
     overflow-x: hidden;
 }
 
+blockquote {
+    margin: 10px 0px 0px 15px;
+    padding: 5px 5px 5px 10px;
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
 #wreathCont {
     width: 100vw;
     height: 100vh;
@@ -70,7 +77,7 @@ body {
     letter-spacing: 0.5pt   !important;
 }
 
-.opQuote {
+.desc {
     width: 70%;
     border-radius: 5px;
     position: absolute;
@@ -88,16 +95,27 @@ body {
     border-radius: 3px;
 }
 
-.header {
+#opName {
+    font: 50pt 'Literata', Times, serif;
+}
+
+.subtitle {
+    margin-top: 100px;
+    font: 40pt 'Literata', Times, serif;
+}
+
+th, .header {
     font: 12pt 'Literata', Times, serif;
     font-weight: 700;
     text-transform: uppercase;
+    word-spacing: 1pt;
+    padding-right: 3px;
 }
 
 .divider {
     width: 40px;
     height: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0px 20px 0px;
 }
 
 .archetypes {
@@ -106,12 +124,36 @@ body {
 }
 
     .tag {
-        padding: 5px 10px;
+        padding: 3px 6px;
         border-radius: 5px;
     }
 
-#opName {
-    font: 50pt 'Literata', Times, serif;
+.artInfo {
+    margin: 20px 0px;
+    padding: 15px;
+    border: 1px solid #EDEDED;
+}
+
+.traits {
+    margin: 50px 0px 10px 0px;
+}
+
+.smallSection {
+    margin: 10px 0px 10px 0px;
+}
+
+table, tr, th, td {
+    border: 1px solid #EDEDED;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 30%;
 }
 
 #footer {
