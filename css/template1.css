@@ -55,8 +55,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 50%;
-    margin-bottom: -35%;
+    width: calc(100vw * 50%);
+    margin-top: -50vh;
     position: relative;
 }
 
@@ -73,8 +73,8 @@ body {
 #container #mainBody {
     background: #ffffff;
     width: 80vw;
+    margin-top: 50vh;
     padding: 20px 10vw;
-    padding-top: 30% !important;
     border-radius: 3px;
 }
 
@@ -101,7 +101,6 @@ body {
     }
 
 #opName {
-    margin-top: 50px;
     font: 50pt 'Literata', Times, serif;
 }
 
