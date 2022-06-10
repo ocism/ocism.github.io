@@ -5,49 +5,6 @@ blockquote {
     border-left-width: 5px;
 }
 
-.navigation {
-    background: #ffffff;
-    min-width: 50px;
-    padding: 10px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font: 15pt 'Literata', Times, serif;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    border-radius: 5px;
-    z-index: 99;
-
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-}
-
-    .navLink {
-        color: #000000;
-        text-decoration: none;
-    }
-
-    .navLink:hover {
-        color: #000000;
-    }
-    
-    .navigation:hover:before {
-        content:"Rhodes Island Operator Directory";
-    }
-      
-    .navigation:hover span {
-        display: none;
-    }
-
-
-    .navigation .icon {
-        width: 30px;
-        height: 30px;
-        float: left;
-    }
-
 #wreathCont {
     width: 100vw;
     height: 100vh;

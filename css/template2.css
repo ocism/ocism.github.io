@@ -1,6 +1,180 @@
-body {
-    background: #13131B;
-    font: 13pt 'Roboto', Arial, sans-serif;
-    color: #000000;
-    overflow-x: hidden;
+blockquote {
+    margin: 10px 0px 0px 15px;
+    padding: 5px 5px 5px 10px;
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
+#container {
+    width: 100vw;
+    min-height: 10px;
+    margin-top: 5vh;
+    float: right;
+}
+
+#main-sprite {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(40rem / 3);
+    height: 20rem;
+    margin-left: calc((50rem / 3) * -1);
+    border-radius: 5px;
+    position: fixed;
+    border: 10px solid #ffffff;
+}
+
+#main-sprite-mobile {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc(40rem / 3);
+    height: 20rem;
+    border-radius: 5px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+#container #mainBody {
+    background: #ffffff;
+    width: 80vw;
+    margin-top: 10vh;
+    padding: 50px 5vw 50px 10vw;
+    position: relative;
+    float: right;
+    border-radius: 3px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#opName {
+    font: 60pt 'Literata', Times, serif;
+    overflow: auto;
+}
+
+.rarity {
+    float: left;
+    font-size: 20pt;
+    padding-top: 35pt;
+    padding-left: 20px;
+}
+
+    .rarity .on {
+        color: #D3AB70;
+    }
+
+    .rarity .off {
+        color: #DBDBDB;
+    }
+
+.subtitle {
+    margin-top: 100px;
+    font: 35pt 'Literata', Times, serif;
+}
+
+.smallerTitle {
+    margin: 25px 0px 10px 0px;
+    font: 20pt 'Literata', Times, serif;
+}
+
+th, .header {
+    font: 12pt 'Literata', Times, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 1pt;
+    padding-right: 3px;
+}
+
+.divider {
+    width: 40px;
+    height: 5px;
+    margin: 10px 0px 20px 0px;
+}
+
+.archetypes {
+    font-family: 'Literata', Times, serif;
+    padding: 10px 0px;
+}
+
+    .tag {
+        padding: 3px 6px;
+        border-radius: 5px;
+    }
+
+.artInfo {
+    margin: 20px 0px;
+    padding: 15px;
+    border: 1px solid #DBDBDB;
+}
+
+.traits {
+    margin: 50px 0px 10px 0px;
+}
+
+.smallSection {
+    margin: 10px 0px 10px 0px;
+}
+
+table, tr, th, td {
+    border: 1px solid #DBDBDB;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 30%;
+}
+
+.eliteLevel {
+    width: 1%;
+}
+
+.sp {
+    width: 20%;
+    font-weight: 600;
+}
+
+.spdesc {
+    width: 30%;
+}
+
+.baseSkillName {
+    width: 75%;
+}
+
+.baseRoom {
+    width: 25%;
+}
+
+.fileText{
+    margin: 5px 0px;
+}
+
+.gallery {
+    padding: 10px 0px;
+    overflow: auto;
+}
+
+.gallery img {
+    max-width: 30%;
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+    max-width: 100%;
+}
+
+#footer {
+    text-align: right;
+    clear: right;
 }

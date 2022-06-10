@@ -67,8 +67,8 @@ Table of Contents:
     - NOTE: change ONLY the hex color code (# followed by six characters)
 */
 :root {
-    --accent1: #A2AB51;
-    --accent2: #E2EAA8;
+    --accent1: #aeaeae;
+    --accent2: #e4e4e4;
 }
 </style>
 
@@ -101,20 +101,13 @@ Table of Contents:
                     following format:    E0_operatorname
                     - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
 
-                (2) in the following line, replace `doctor.webp` in the following line with your image 
-                    file name
+                (2) in the following line, replace `placeholder.png` with your file name
+                    - NOTE: you will need to replace this TWICE
         -->
         <div id="main-sprite" class="d-none d-md-block" style="
-            background: url('../images/THUMB_tequila.png');
+            background: url('../images/placeholder.png');
             background-size: 600%;
             background-position: 46% 31%;
-        "></div>
-
-        <div id="main-sprite-mobile" class="d-block d-md-none" style="
-            background: url('../images/THUMB_tequila.png');
-            background-size: 600%;
-            background-position: 46% 31%;
-            border-bottom-color: var(--accent1);
         "></div>
 
         <div aria-description="operator name" id="opName">
@@ -122,7 +115,7 @@ Table of Contents:
                 <!-- (F) OPERATOR NAME
                     replace `Operator Name` with your operator's name
                 -->
-                Tequila
+                Operator Name
             </span>
 
             <!-- (G) OPERATOR RARITY
@@ -133,10 +126,10 @@ Table of Contents:
             -->
             <div aria-description="operator rarity" class="rarity">
                 <i class="on    fas fa-star"></i>
-                <i class="on    fas fa-star"></i>
-                <i class="on    fas fa-star"></i>
-                <i class="on    fas fa-star"></i>
-                <i class="on    fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
                 <i class="off   fas fa-star"></i>
             </div>
         </div>
@@ -155,8 +148,12 @@ Table of Contents:
                         tag name
                     </span>&nbsp;
             -->
-            <span class="tag" style="background: var(--accent2)">nuker</span>
-            <span class="tag" style="background: var(--accent2)">liberator guard</span>
+            <span class="tag" style="background: var(--accent2)">
+                tag 1
+            </span>&nbsp;
+            <span class="tag" style="background: var(--accent2)">
+                tag 2
+            </span>&nbsp;
             <!-- paste more tags below -->
 
             <!-- do NOT paste past this line -->
@@ -167,13 +164,13 @@ Table of Contents:
                 <!-- (I1) ARTIST
                     change only the following line `Uncredited`
                 -->
-                一千
+                Uncredited
                 <br />
             <span class="header">CV</span>
                 <!-- (I2) CV
                     change only the following line `Chris Pratt`
                 -->
-                Nobunaga Shimazaki
+                Chris Pratt
         </div>
 
         <div aria-description="operator description" class="traits">
@@ -181,15 +178,13 @@ Table of Contents:
             <!-- (E) OPERATOR DESCRIPTION
                 replace `Lorem ispum...` with your operator's description
             -->
-            Guard Operator Tequila, all smiles on the battlefield too.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
 
         <div aria-description="operator traits" class="smallSection">
             <span class="header">Traits</span>
             <!-- (J) OPERATOR TRAITS -->
-            Normally does not attack and has 0 Block; When skill is inactive,
-            ATK gradually increases up to +2% over 20 seconds. ATK is reset
-            when the skill ends
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
 
         <div aria-description="operator quote" class="smallSection">
@@ -198,7 +193,7 @@ Table of Contents:
                 <!-- (K) OPERATOR QUOTE
                     replace `Lorem ispum...` with your operator's token description
                 -->
-                Don't worry, he'll set everything up just hunky-dory. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </blockquote>
         </div>
 
@@ -208,15 +203,13 @@ Table of Contents:
                     replace `doctor` with your operator's name
                     - NOTE: do NOT have a space between `&#8217;` and your inserted name
                 -->
-                Tequila&#8217;s Token
+                Doctor&#8217;s Token
             </div>
             <blockquote style="border-left-color: var(--accent1)">
                 <!-- (L2) OPERATOR TOKEN
                     replace `Lorem ispum...` with your operator's token description
                 -->
-                A nameplate with a full name and date inscribed. Ever since
-                the day he obtained it, Tequila has always carried it on him.
-                Now's the time for him to let it go.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </blockquote>
         </div>
 
@@ -226,31 +219,31 @@ Table of Contents:
         <table aria-description="general profile" style="margin-top: 50px;">
             <tr>
                 <th>Gender</th>
-                <td>Male</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Place of Birth</th>
-                <td>Bolívar</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Birthday</th>
-                <td>May 15</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Race</th>
-                <td>Pero</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Height</th>
-                <td>182cm</td>
+                <td>???cm</td>
             </tr>
             <tr>
                 <th>Combat Experience</th>
-                <td>3 Years</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Infection Status</th>
-                <td>Medical tests have confirmed that no infection is present.</td>
+                <td>???</td>
             </tr>
         </table>
 
@@ -264,54 +257,77 @@ Table of Contents:
         <table aria-description="technical profile">
             <tr>
                 <th>Physical Strength</th>
-                <td>Standard</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Mobility</th>
-                <td>Standard</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Physiological Endurance</th>
-                <td>Normal</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Tactical Planning</th>
-                <td>Excellent</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Combat Skill</th>
-                <td>Standard</td>
+                <td>???</td>
             </tr>
             <tr>
                 <th>Originium Adaptability</th>
-                <td>Normal</td>
+                <td>???</td>
             </tr>
         </table>
 
-        <!-- (O) OPERATOR TALENTS -->
+        <!-- (O) OPERATOR TALENTS
+            to add more talents, copy the following template and add it where indicated
+
+            <table aria-description="operator talents" style="margin-top: 10px;">
+                <tr aria-description="talent">
+                    <th aria-description="talent name" colspan="2">
+                        Talent Name
+                    </th>
+                </tr>
+                <tr>
+                    <th class="eliteLevel">E1</th>
+                    <td aria-description="talent description E1">
+                        Talent Description at E1
+                    </td>
+                </tr>
+                <tr>
+                    <th class="eliteLevel">E2</th>
+                    <td aria-description="talent description E2">
+                        Talent Description at E2
+                    </td>
+                </tr>
+            </table>
+        -->
         <div class="smallerTitle">Talent</div>
         <!-- TALENT 1 -->
         <table aria-description="operator talents">
             <tr aria-description="talent">
                 <th aria-description="talent name" colspan="2">
-                    Waiting Game
+                    Talent 1 Name
                 </th>
             </tr>
             <tr>
                 <th class="eliteLevel">E1</th>
                 <td aria-description="talent description E1">
-                    When skill is inactive, deals 10% of Tequila's ATK as
-                    Arts damage to the attacker when Tequila is attacked 
+                    Talent 1 Description at E1
                 </td>
             </tr>
             <tr>
                 <th class="eliteLevel">E2</th>
                 <td aria-description="talent description E2">
-                    When skill is inactive, deals 20% of Tequila's ATK as
-                    Arts damage to the attacker when Tequila is attacked 
+                    Talent 1 Description at E2
                 </td>
             </tr>
         </table>
+        <!-- paste additional talents below -->
+
+        <!-- do NOT paste paste this line -->
 
         <div class="smallerTitle">Skills</div>
         <!-- (P) OPERATOR TALENTS -->
@@ -319,37 +335,46 @@ Table of Contents:
         <table aria-description="operator skills">
             <tr aria-description="skill 1">
                 <th aria-description="skill 1 name" colspan="2">
-                    Skill 1: Decisive Action 
+                    <!-- change skill name -->
+                    Skill 1: Skill Name
                 </th>
                 <td class="sp">Skill Activation</th>
                 <td aria-description="SP cost" class="spdesc">
-                    Manual
+                    <!-- skill activation-->
+                    activation type
                 </td>
             </tr>
             <tr>
                 <td class="sp">SP Cost</th>
                 <td aria-description="SP cost" class="spdesc">
-                    30
+                    <!-- change SP cost -->
+                    SP cost value
                 </td>
                 <td class="sp">SP Charge Type</th>
                 <td aria-description="SP charge type" class="spdesc">
-                    Per Second
+                    <!-- change SP Charge Type -->
+                    charge type
                 </td>
             </tr>
             <tr>
                 <td class="sp">Initial SP</th>
                 <td aria-description="initial SP" class="spdesc">
-                    0
+                    <!-- change initial SP -->
+                    initial SP value
                 </td>
                 <td class="sp">Duration</th>
                 <td aria-description="duration" class="spdesc">
-                    20 seconds
+                    <!-- change duration value -->
+                    xx seconds
                 </td>
             </tr>
             <tr>
                 <td aria-description="skill 1 description" colspan="4">
                     <!-- change skill description -->
-                    ASPD +20 and every attack deals 120% of ATK as Physical damage
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </td>
             </tr>
         </table>
@@ -357,41 +382,46 @@ Table of Contents:
         <table style="margin-top: 10px;">
             <tr aria-description="skill 2">
                 <th aria-description="skill 2 name" colspan="2">
-                    Skill 2: Esoteric Bladework Skill Name
+                    <!-- change skill name -->
+                    Skill 2: Skill Name
                 </th>
                 <td class="sp">Skill Activation</th>
                 <td aria-description="SP cost" class="spdesc">
-                    Manual
+                    <!-- skill activation-->
+                    activation type
                 </td>
             </tr>
             <tr>
                 <td class="sp">SP Cost</th>
                 <td aria-description="SP cost" class="spdesc">
-                    30
+                    <!-- change SP cost -->
+                    SP cost value
                 </td>
                 <td class="sp">SP Charge Type</th>
                 <td aria-description="SP charge type" class="spdesc">
-                    Per Second
+                    <!-- change SP Charge Type -->
+                    charge type
                 </td>
             </tr>
             <tr>
                 <td class="sp">Initial SP</th>
                 <td aria-description="initial SP" class="spdesc">
-                    0
+                    <!-- change initial SP -->
+                    initial SP value
                 </td>
                 <td class="sp">Duration</th>
                 <td aria-description="duration" class="spdesc">
                     <!-- change duration value -->
-                    15 seconds
+                    xx seconds
                 </td>
             </tr>
             <tr>
                 <td aria-description="skill 1 description" colspan="4">
-                    Attack Range expands and attacks 2 enemies simultaneously.
-                    Every attack deals 140% of ATK as Physical damage.
-                    Charged effect: Changes to attacking 3 enemies simultaneously
-                    and skill duration is extended to 30 seconds<br />
-                    * Can manually deactivate skill (skill can be deactivated at will)
+                    <!-- change skill description -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </td>
             </tr>
         </table>
@@ -399,9 +429,13 @@ Table of Contents:
             to add in a third skill, uncomment the following code: -->
         <!-- <table style="margin-top: 10px;">
             <tr aria-description="skill 3">
-                <th aria-description="skill 3 name" colspan="4">
+                <th aria-description="skill 3 name" colspan="2">
                     Skill 3: Name
                 </th>
+                <td class="sp">Skill Activation</th>
+                <td aria-description="SP cost" class="spdesc">
+                    activation type
+                </td>
             </tr>
             <tr>
                 <td class="sp">
