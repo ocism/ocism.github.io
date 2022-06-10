@@ -204,6 +204,18 @@ th {
     margin: 5px 0px;
 }
 
+.gallery {
+    padding: 10px 0px;
+    overflow: auto;
+}
+
+.gallery img {
+    max-width: 30%;
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+}
+
 #footer {
     width: 80vw;
     padding: 50px 0px 25px 0px;
