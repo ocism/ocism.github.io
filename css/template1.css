@@ -120,6 +120,11 @@ blockquote {
     font: 35pt 'Literata', Times, serif;
 }
 
+.smallerTitle {
+    margin-top: 25px;
+    font: 20pt 'Literata', Times, serif;
+}
+
 th, .header {
     font: 12pt 'Literata', Times, serif;
     font-weight: 700;
@@ -147,7 +152,7 @@ th, .header {
 .artInfo {
     margin: 20px 0px;
     padding: 15px;
-    border: 1px solid #EDEDED;
+    border: 1px solid #DBDBDB;
 }
 
 .traits {
@@ -159,7 +164,7 @@ th, .header {
 }
 
 table, tr, th, td {
-    border: 1px solid #EDEDED;
+    border: 1px solid #DBDBDB;
     border-collapse: collapse;
     padding: 5px 10px;
 }
@@ -170,6 +175,10 @@ table {
 
 th {
     width: 30%;
+}
+
+.eliteLevel {
+    width: 1%;
 }
 
 #footer {
