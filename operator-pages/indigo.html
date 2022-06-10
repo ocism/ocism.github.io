@@ -174,10 +174,11 @@
             </tr>
         </table>
 
+        <!-- OPERATOR TALENTS -->
         <div class="smallerTitle">Talent</div>
         <table aria-description="operator talents">
-            <tr aria-description="Talent 1">
-                <th aria-description="Talent 1 Name" colspan="2">
+            <tr aria-description="talent 1">
+                <th aria-description="talent 1 name" colspan="2">
                     Gentle Binding Gaze
                 </th>
             </tr>
@@ -185,7 +186,7 @@
                 <th class="eliteLevel">
                     E1
                 </th>
-                <td aria-description="Talent 1 Description E1">
+                <td aria-description="talent 1 description E1">
                     When attacking, has a 12% chance to Bind the target for 4
                     seconds. Will not target Bound enemies
                 </td>
@@ -194,14 +195,14 @@
                 <th class="eliteLevel">
                     E2
                 </th>
-                <td aria-description="Talent 1 Description E2">
+                <td aria-description="talent 1 description E2">
                     When attacking, has a 18% chance to Bind the target for 4
                     seconds. Will not target Bound enemies 
                 </td>
             </tr>
             
-            <!-- <tr aria-description="Talent 2">
-                <th aria-description="Talent 1 Name" colspan="2">
+            <!-- <tr aria-description="talent 2">
+                <th aria-description="talent 2 name" colspan="2">
                     Talent 2 Name
                 </th>
             </tr>
@@ -209,7 +210,7 @@
                 <th class="eliteLevel">
                     E1
                 </th>
-                <td aria-description="Talent 1 Description E1">
+                <td aria-description="talent 2 description E1">
                     Talent 2 Description E1
                 </td>
             </tr>
@@ -217,10 +218,157 @@
                 <th class="eliteLevel">
                     E2
                 </th>
-                <td aria-description="Talent 1 Description E2">
+                <td aria-description="talent 2 description E2">
                     Talent 2 Description E2
                 </td>
             </tr> -->
+        </table>
+
+        <!-- OPERATOR TALENTS -->
+        <div class="smallerTitle">Skills</div>
+        <!-- SKILL 1 -->
+        <table aria-description="operator skills">
+            <tr aria-description="skill 1">
+                <th aria-description="skill 1 name" colspan="4">
+                    Skill 1: Lighthouse Guardian
+                </th>
+            </tr>
+            <tr>
+                <td class="sp">
+                    SP Cost
+                </th>
+                <td aria-description="SP cost" class="spdesc">
+                    19
+                </td>
+                <td class="sp">
+                    SP Charge Type
+                </th>
+                <td aria-description="SP charge type" class="spdesc">
+                    Manual Trigger
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">
+                    Initial SP
+                </th>
+                <td aria-description="initial SP" class="spdesc">
+                    5
+                </td>
+                <td class="sp">
+                    Duration
+                </th>
+                <td aria-description="duration" class="spdesc">
+                    4 seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 1 description" colspan="4">
+                    Attack range changes, attack interval is significantly reduced,
+                    and each attack deals 40% ATK as Arts damage
+                    <br />* This Skill modifies the Attack Interval by -0.8
+                </td>
+            </tr>
+        </table>
+        <!-- SKILL 2 -->
+        <table style="margin-top: 10px;">
+            <tr aria-description="skill 2">
+                <th aria-description="skill 2 name" colspan="4">
+                    Skill 2: Labyrinth of Light
+                </th>
+            </tr>
+            <tr>
+                <td class="sp">
+                    SP Cost
+                </th>
+                <td aria-description="SP cost" class="spdesc">
+                    50
+                </td>
+                <td class="sp">
+                    SP Charge Type
+                </th>
+                <td aria-description="SP charge type" class="spdesc">
+                    Manual Trigger
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">
+                    Initial SP
+                </th>
+                <td aria-description="initial SP" class="spdesc">
+                    10
+                </td>
+                <td class="sp">
+                    Duration
+                </th>
+                <td aria-description="duration" class="spdesc">
+                    4 seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 2 description" colspan="4">
+                    Attack Interval reduces a little and the activation rate of this unit's Talent increases
+                    to 1.5 times. Bind enemies within Attack Range receive Arts damage equal to 10% of
+                    Indigo's ATK every 0.5 seconds
+                    <br />* This Skill modifies the Attack Interval by 0.8
+                </td>
+            </tr>
+        </table>
+        <!-- SKILL 3 -->
+        <!-- <table style="margin-top: 10px;">
+            <tr aria-description="skill 3">
+                <th aria-description="skill 3 name" colspan="4">
+                    Skill 3: Name
+                </th>
+            </tr>
+            <tr>
+                <td class="sp">
+                    SP Cost
+                </th>
+                <td aria-description="SP cost" class="spdesc">
+                    xx
+                </td>
+                <td class="sp">
+                    SP Charge Type
+                </th>
+                <td aria-description="SP charge type" class="spdesc">
+                    charge type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">
+                    Initial SP
+                </th>
+                <td aria-description="initial SP" class="spdesc">
+                    xx
+                </td>
+                <td class="sp">
+                    Duration
+                </th>
+                <td aria-description="duration" class="spdesc">
+                    xx seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 2 description" colspan="4">
+                    description
+                </td>
+            </tr>
+        </table> -->
+
+        <div class="smallerTitle">RIIC Base Skills</div>
+        <table>
+            <tr>
+                <th class="baseSkillName">Poisoner's Friend</th>
+                <td class="baseRoom"><strong>Room Type:</strong> Dormitory</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    When this Operator is assigned to a Dormitory, restores +0.55 Morale
+                    per hour to another Operator assigned to that Dormitory whose Morale
+                    is not full (Only the strongest effect of this type takes place); if
+                    the target is Blue Poison, further increases Morale restored by +0.45
+                </td>
+            </tr>
         </table>
     
     </div>

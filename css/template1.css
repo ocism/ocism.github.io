@@ -121,7 +121,7 @@ blockquote {
 }
 
 .smallerTitle {
-    margin-top: 25px;
+    margin: 25px 0px 10px 0px;
     font: 20pt 'Literata', Times, serif;
 }
 
@@ -179,6 +179,23 @@ th {
 
 .eliteLevel {
     width: 1%;
+}
+
+.sp {
+    width: 20%;
+    font-weight: 600;
+}
+
+.spdesc {
+    width: 30%;
+}
+
+.baseSkillName {
+    width: 75%;
+}
+
+.baseRoom {
+    width: 25%;
 }
 
 #footer {
