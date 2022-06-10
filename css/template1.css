@@ -63,7 +63,7 @@ blockquote {
     background-repeat: no-repeat;
     background-size: 100%;
     width: calc(100vw * 50%);
-    margin-top: -50vh;
+    margin-top: -25vh;
     position: relative;
 }
 
@@ -90,7 +90,7 @@ blockquote {
 #container #mainBody {
     background: #ffffff;
     width: 80vw;
-    margin-top: 50vh;
+    margin-top: 25vh;
     padding: 20px 10vw;
     border-radius: 3px;
 }
