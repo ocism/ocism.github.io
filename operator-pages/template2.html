@@ -86,7 +86,7 @@ Table of Contents:
 
 <div id="wreathCont">
     <div id="wreath">
-        <div class="mx-auto wreath1">
+        <div class="wreath1">
             <div class="wreath2"></div>
         </div>
     </div>
@@ -101,13 +101,40 @@ Table of Contents:
                     following format:    E0_operatorname
                     - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
 
-                (2) in the following line, replace `placeholder.png` with your file name
-                    - NOTE: you will need to replace this TWICE
+            (2) in the following line, replace `placeholder.png` with your file name
+                - NOTE: you will need to replace this TWICE
+
+            (3) Adjust the value of `500%` (fourth line of the template, or line 49 above) to a zoom
+                of your choice for the image. If you wish your image to be at full size by default,
+                delete this line and ONLY this line in its entirely
+                - NOTE: the percentage listed is actually NOT the zoom of your image itself; you can
+                        consider the value to be arbitrary
+
+            (4) By default, the crop will be around the very center of your image. If you wish to
+                keep it this way, please leave the fifth line of the template, or line 50 above
+                alone. Otherwise, you can change `center` to one of the following to adjust the crop:
+                * left top          * left center
+                * left bottom       * right top
+                * right center      * right bottom
+                * center top        * center bottom
+                - NOTE: If none of the above crops are to your liking, you may replace it with:
+                        xx% yy%
+                        where `xx%` indicates the horizontal placement and`yy%` indicates the vertical
+                        placement from the top left corner of the image (e.g. 30% right from the top
+                        left, 60% down from the top left)
         -->
         <div id="main-sprite" class="d-none d-md-block" style="
             background: url('../images/placeholder.png');
-            background-size: 600%;
-            background-position: 46% 31%;
+            background-size: 300%;
+            background-position: center;
+        "></div>
+
+        <!-- repeat steps (2) - (4) from above; I recommend you set all values to be the same -->
+        <div id="main-sprite-mobile" class="d-block d-md-none" style="
+            background: url('../images/THUMB_tequila.png');
+            background-size: 300%;
+            background-position: center;
+            border-bottom-color: var(--accent1);
         "></div>
 
         <div aria-description="operator name" id="opName">

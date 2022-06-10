@@ -1,48 +1,9 @@
-<!--
-TEMPLATE 1:
-    to see an example of this template filled out, look at `indigo.html`
-
---
-
-Table of Contents:
-    - ctrl+f any of the following to find where it is located in the code
-
-(A) OPERATOR NAME
-(B) FAVICON
-(C) ADJUST ACCENT COLORS`
-(D) OPERATOR IMAGE
-(E) OPERATOR DESCRIPTION
-(F) OPERATOR NAME
-(G) OPERATOR RARITY
-(H) ARCHETYPE TAGS
-(I1) ARTIST, (I2) CV
-(J) OPERATOR TRAITS
-(K) OPERATOR QUOTE
-(L1) OPERATOR TOKEN [name], (L2) OPERATOR TOKEN [description]
-(M) GENERAL PROFILE
-(N) TECHNICAL OVERVIEW
-(O) OPERATOR TALENTS
-(P) OPERATOR TALENTS
-(Q) RIIC BASE SKILLS
-(R) OPERATOR VOICE LINES
-(S) ARCHIVE FILES
-(T) GALLERY
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-<!-- (A) OPERATOR NAME -->
 <title>Operator Name</title>
 
-<!-- (B) FAVICON
-    change `../images/web/rhodes.png` to either:
-    - the URL of the image
-    - the file path of your image
-        - please place all images into the `images` folder
-        - the file path will be `../images/YOURFILENAME.png`
-    - NOTE: do not remove the quotes around the path-->
 <link rel="icon" type="image/x-icon" href="../images/web/rhodes.png">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -61,11 +22,6 @@ Table of Contents:
 
 <style type="text/css">
 
-/* (C) ADJUST ACCENT COLORS
-    change `#aeaeae` (accent1) and `#e4e4e4` (accent2) to your 
-    colors of choice; I recommend accent1 to be darker than accent2
-    - NOTE: change ONLY the hex color code (# followed by six characters)
-*/
 :root {
     --accent1: #A2AB51;
     --accent2: #E2EAA8;
@@ -84,9 +40,9 @@ Table of Contents:
     </div>
 </a>
 
-<div id="wreathCont">
+<div id="wreathCont" class="d-none d-md-block">
     <div id="wreath">
-        <div class="mx-auto wreath1">
+        <div class="wreath1">
             <div class="wreath2"></div>
         </div>
     </div>
@@ -96,14 +52,6 @@ Table of Contents:
 
     <div id="mainBody" style="border-bottom-color: var(--accent1)">
 
-        <!-- (D) OPERATOR IMAGE 
-            (1) upload your image into the `images` folder. Please rename your image to fit the
-                    following format:    E0_operatorname
-                    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
-
-                (2) in the following line, replace `doctor.webp` in the following line with your image 
-                    file name
-        -->
         <div id="main-sprite" class="d-none d-md-block" style="
             background: url('../images/THUMB_tequila.png');
             background-size: 600%;
@@ -119,18 +67,9 @@ Table of Contents:
 
         <div aria-description="operator name" id="opName">
             <span style="float: left;">
-                <!-- (F) OPERATOR NAME
-                    replace `Operator Name` with your operator's name
-                -->
                 Tequila
             </span>
 
-            <!-- (G) OPERATOR RARITY
-                change your operator's displayed rarity accordingly:
-                    yellow stars: on
-                    grey stars: off
-                currently, it is displaying 1 yellow star and 5 grey stars
-            -->
             <div aria-description="operator rarity" class="rarity">
                 <i class="on    fas fa-star"></i>
                 <i class="on    fas fa-star"></i>
@@ -145,48 +84,25 @@ Table of Contents:
 
         <div aria-description="operator archetype tags" class="archetypes">
 
-            <!-- (H) ARCHETYPE TAGS
-                (1) replace `tag 1` and `tag 2` with the archetype tags.
-
-                (2) if you would like to insert more than two tags, copy the following template
-                    and change `tag name` to what you wan to display. paste this where indicated
-
-                    <span class="tag" style="background: var(--accent2)">
-                        tag name
-                    </span>&nbsp;
-            -->
             <span class="tag" style="background: var(--accent2)">nuker</span>
             <span class="tag" style="background: var(--accent2)">liberator guard</span>
-            <!-- paste more tags below -->
-
-            <!-- do NOT paste past this line -->
         </div>
 
         <div aria-description="operator artist and CV" class="artInfo">
             <span class="header">artist</span>
-                <!-- (I1) ARTIST
-                    change only the following line `Uncredited`
-                -->
                 一千
                 <br />
             <span class="header">CV</span>
-                <!-- (I2) CV
-                    change only the following line `Chris Pratt`
-                -->
                 Nobunaga Shimazaki
         </div>
 
         <div aria-description="operator description" class="traits">
             <span class="header">Operator Description</span>
-            <!-- (E) OPERATOR DESCRIPTION
-                replace `Lorem ispum...` with your operator's description
-            -->
             Guard Operator Tequila, all smiles on the battlefield too.
         </div>
 
         <div aria-description="operator traits" class="smallSection">
             <span class="header">Traits</span>
-            <!-- (J) OPERATOR TRAITS -->
             Normally does not attack and has 0 Block; When skill is inactive,
             ATK gradually increases up to +2% over 20 seconds. ATK is reset
             when the skill ends
@@ -195,34 +111,21 @@ Table of Contents:
         <div aria-description="operator quote" class="smallSection">
             <div class="header">Operator Quote</div>
             <blockquote style="border-left-color: var(--accent1)">
-                <!-- (K) OPERATOR QUOTE
-                    replace `Lorem ispum...` with your operator's token description
-                -->
                 Don't worry, he'll set everything up just hunky-dory. 
             </blockquote>
         </div>
 
         <div aria-description="operator token" class="smallSection">
             <div class="header">
-                <!-- (L1) OPERATOR TOKEN
-                    replace `doctor` with your operator's name
-                    - NOTE: do NOT have a space between `&#8217;` and your inserted name
-                -->
                 Tequila&#8217;s Token
             </div>
             <blockquote style="border-left-color: var(--accent1)">
-                <!-- (L2) OPERATOR TOKEN
-                    replace `Lorem ispum...` with your operator's token description
-                -->
                 A nameplate with a full name and date inscribed. Ever since
                 the day he obtained it, Tequila has always carried it on him.
                 Now's the time for him to let it go.
             </blockquote>
         </div>
 
-        <!-- (M) GENERAL PROFILE
-            when filling out the table, change only the text between `<td>` and `</td>`
-        -->
         <table aria-description="general profile" style="margin-top: 50px;">
             <tr>
                 <th>Gender</th>
@@ -258,9 +161,6 @@ Table of Contents:
         
         <div class="divider" style="background: var(--accent1)"></div>
 
-        <!-- (N) TECHNICAL OVERVIEW
-            when filling out the table, change only the text between `<td>` and `</td>`
-        -->
         <table aria-description="technical profile">
             <tr>
                 <th>Physical Strength</th>
@@ -288,7 +188,6 @@ Table of Contents:
             </tr>
         </table>
 
-        <!-- (O) OPERATOR TALENTS -->
         <div class="smallerTitle">Talent</div>
         <!-- TALENT 1 -->
         <table aria-description="operator talents">
@@ -314,7 +213,6 @@ Table of Contents:
         </table>
 
         <div class="smallerTitle">Skills</div>
-        <!-- (P) OPERATOR TALENTS -->
         <!-- SKILL 1 -->
         <table aria-description="operator skills">
             <tr aria-description="skill 1">
@@ -348,7 +246,6 @@ Table of Contents:
             </tr>
             <tr>
                 <td aria-description="skill 1 description" colspan="4">
-                    <!-- change skill description -->
                     ASPD +20 and every attack deals 120% of ATK as Physical damage
                 </td>
             </tr>
@@ -381,7 +278,6 @@ Table of Contents:
                 </td>
                 <td class="sp">Duration</th>
                 <td aria-description="duration" class="spdesc">
-                    <!-- change duration value -->
                     15 seconds
                 </td>
             </tr>
@@ -396,7 +292,6 @@ Table of Contents:
             </tr>
         </table>
 
-        <!-- (Q) RIIC BASE SKILLS -->
         <div class="smallerTitle">RIIC Base Skills</div>
         <table>
             <tr>
@@ -421,7 +316,6 @@ Table of Contents:
             
         <div class="divider" style="background: var(--accent1)"></div>
 
-        <!-- (R) OPERATOR VOICE LINES -->
         <table>
             <tr>
                 <th>Appointed as Assistant</th>
@@ -674,27 +568,12 @@ Table of Contents:
             </tr>
         </table>
 
-        <!-- (S) ARCHIVE FILES
-            create a paragraph by sandwiching the text with `<p>` and `</p>`
-            for example, the following will display as two paragraphs with a space between them:
-
-            <p>hello world</p>
-            <p>this is another paragraph</p>
-
-            -
-
-            if you want to have a new line without a paragraph space, use `<br />`
-            for example, the following will display as two lines without no space between them:
-
-            <p>hello <br /> world</p>
-        -->
         <div class="subtitle">Archive Files</div>
             
         <div class="divider" style="background: var(--accent1)"></div>
 
         <div class="smallerTitle">Profile</div>
         <div class="fileText">
-            <!-- (S1) PROFILE -->
             <p>The former deputy director of the International Trade Management Department of
                 Dossoles, real name Ernesto Salas, was dismissed during the riots in Dossoles
                 City. After that, he was recommended to Rhodes Island by Operator Ch'en, and
@@ -711,7 +590,6 @@ Table of Contents:
         <div class="fileText">
             <p><em>Increase Trust to 25.</em></p>
             
-            <!-- (S2) CLINICAL ANALYSIS --->
             <p>Imaging tests reveal clear, normal outlines of internal organs, and no abnormal
                 shadows have been detected. Originium granules have not been detected in the
                 circulatory system and there is no sign of infection. At this time, this operator
@@ -734,7 +612,6 @@ Table of Contents:
         <div class="fileText">
             <p><em>Increase Trust to 50.</em></p>
             
-            <!-- (S3) ARCHIVE FILE 1 --->
             <p>[Originium Arts Overview]</p>
 
             <p>After arriving at Rhodes Island, Operator Tequila seemed to adapt to his new lifestyle
@@ -760,7 +637,6 @@ Table of Contents:
         <div class="fileText">
             <p><em>Increase Trust to 100.</em></p>
 
-            <!-- (S4) ARCHIVE FILE 2 --->
             <p>The young Perro named Ernesto Salas was born into a military family in Bolívar. His
                 father, Pancho Salas, joined the 'True Bolívarians' local resistance force because
                 of his patriotic ideals, leaving behind his wife and his son.</p>
@@ -790,7 +666,6 @@ Table of Contents:
         <div class="fileText">
             <p><em>Increase Trust to 150.</em></p>
 
-            <!-- (S5) ARCHIVE FILE 3 --->
             <p>Operator Tequila quickly accomplished two things at Rhodes Island:</p>
 
             <p>First, he improved the wine-tasting ability of many operators. In his spare time, he
@@ -830,7 +705,6 @@ Table of Contents:
         <div class="fileText">
             <p><em>Increase Trust to 200.</em></p>
             
-            <!-- (S6) ARCHIVE FILE 4 --->
             <p>Regarding the events that occurred during the Dossoles championship, Operator Ch'en has
                 already briefly explained the causes and consequences to us in a report, specifically
                 mentioning why she would recommend Tequila and Rafaela to Rhodes Island.</p>
@@ -880,7 +754,6 @@ Table of Contents:
         <div class="fileText">
             <p><em>Upgrade to Elite LV2.</em></p>
 
-            <!-- (S7) PROMOTIONAL FILE --->
             <p>The personality that we observed in this young man is not quite as sunny and hearty as the side he
                 displays. We were able to discover this without much difficulty when he didn't try to cover it up
                 from us too much.</p>
@@ -908,47 +781,22 @@ Table of Contents:
         <div class="divider" style="background: var(--accent1)"></div>
 
         <div class="gallery">
-            <!-- (T) GALLERY 
-                (1) upload your image into the `images` folder. Please rename your image to fit the
-                    following format:    GALLERY_filename
-                    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
-
-                (2) replace `placeholder.png` with the file name from above
-
-                (3) to add more images, copy the following template and paste where indicated; repeat
-                    step (1) and (2)
-
-                    <img src="../images/placeholder.png" />
-            -->
             <img src="../images/placeholder.png" />
-
-            <!-- paste more images to the gallery below-->
-
-            <!-- do NOT paste past this line -->
         </div>
 
     </div> <!-- mainBody div -->
 
     <div class="mx-auto" id="footer">
-        <!-- (U) CREDITS
-            add all credits to yourself, additional artists, etc. here; places to insert names are
-            indicated with `_`
-        -->
         <p><strong>Created with love by _
         &nbsp;|&nbsp; Page by <a href="https://github.com/soupbara/">soupbara</a></strong></p>
 
-        <!-- ADD ADDITIONAL CREDITS HERE-->
-        <p>
-            Special thanks to: _
-        </p>
-        
-        <!-- DO NOT TOUCH ANYTHING PAST THIS LINE -->
         <p>Rhodes Island Operator Directory is not affiliated with nor endorsed by Arknights, Hypergryph,
         Studio Montagne, or Yostar.
         <br />
         All assets that are not original are courtesy of <a href="https://github.com/Aceship/AN-EN-Tags/">Aceship</a>,
         and are the property of Hypergryph and Yostar.</p>
 
+        <p>Special thanks to: _ , _ , _.</p>
     </div> <!-- footer DIV -->
 </div> <!-- container DIV -->
 
