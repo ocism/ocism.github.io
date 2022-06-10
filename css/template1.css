@@ -97,7 +97,23 @@ blockquote {
 
 #opName {
     font: 60pt 'Literata', Times, serif;
+    overflow: auto;
 }
+
+.rarity {
+    float: left;
+    font-size: 20pt;
+    padding-top: 35pt;
+    padding-left: 20px;
+}
+
+    .rarity .on {
+        color: #D3AB70;
+    }
+
+    .rarity .off {
+        color: #DBDBDB;
+    }
 
 .subtitle {
     margin-top: 100px;
