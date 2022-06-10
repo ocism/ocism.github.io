@@ -1,0 +1,912 @@
+<!--
+TEMPLATE 1:
+    to see an example of this template filled out, look at `indigo.html`
+
+--
+
+Table of Contents:
+    - ctrl+f any of the following to find where it is located in the code
+
+(A) OPERATOR NAME
+(B) FAVICON
+(C) ADJUST ACCENT COLORS`
+(D) OPERATOR IMAGE
+(E) OPERATOR DESCRIPTION
+(F) OPERATOR NAME
+(G) OPERATOR RARITY
+(H) ARCHETYPE TAGS
+(I1) ARTIST, (I2) CV
+(J) OPERATOR TRAITS
+(K) OPERATOR QUOTE
+(L1) OPERATOR TOKEN [name], (L2) OPERATOR TOKEN [description]
+(M) GENERAL PROFILE
+(N) TECHNICAL OVERVIEW
+(O) OPERATOR TALENTS
+(P) OPERATOR TALENTS
+(Q) RIIC BASE SKILLS
+(R) OPERATOR VOICE LINES
+(S) ARCHIVE FILES
+(T) GALLERY
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- (A) OPERATOR NAME -->
+<title>Operator Name</title>
+
+<!-- (B) FAVICON
+    change `../images/web/rhodes.png` to either:
+    - the URL of the image
+    - the file path of your image
+        - please place all images into the `images` folder
+        - the file path will be `../images/YOURFILENAME.png`
+    - NOTE: do not remove the quotes around the path-->
+<link rel="icon" type="image/x-icon" href="../images/web/rhodes.png">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/master.css">
+<link rel="stylesheet" type="text/css" href="../css/template1.css">
+<script type="text/javascript" src="js/script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400&family=Roboto&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/fb25db8e8c.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<style type="text/css">
+
+/* (C) ADJUST ACCENT COLORS
+    change `#aeaeae` (accent1) and `#e4e4e4` (accent2) to your 
+    colors of choice; I recommend accent1 to be darker than accent2
+    - NOTE: change ONLY the hex color code (# followed by six characters)
+*/
+:root {
+    --accent1: #aeaeae;
+    --accent2: #e4e4e4;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="../index.html" class="navLink">
+    <div class="navigation" style="
+        border-bottom-color: var(--accent1);
+    ">
+        <span>RI/OD</span>
+    </div>
+</a>
+
+<div id="wreathCont">
+    <div id="wreath">
+        <div class="mx-auto wreath1">
+            <div class="wreath2"></div>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+
+    <div class="mx-auto" id="mainBody" style="border-bottom-color: var(--accent1)">
+        <div aria-description="operator image" class="mx-auto" id="main-sprite">
+            <!-- (D) OPERATOR IMAGE
+                (1) upload your image into the `images` folder. Please rename your image to fit the
+                    following format:    E0_operatorname
+                    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
+
+                (2) in the following line, replace `doctor.webp` in the following line with your image 
+                    file name-->
+            <img src="../images/doctor.webp" />
+
+            <div class="desc" style="
+                background-color: var(--accent1);
+            ">
+                <div style="background-color: var(--accent2)" class="header opHeader">Operator Description</div>
+                
+                <div aria-description="operator description" style="padding: 10px 20px;">
+                    <!-- (E) OPERATOR DESCRIPTION
+                        replace `Lorem ispum...` with your operator's description
+                    -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+            </div>
+        </div>
+
+        <div aria-description="operator name" id="opName">
+            <span style="float: left;">
+                <!-- (F) OPERATOR NAME
+                    replace `Operator Name` with your operator's name
+                -->
+                Operator Name
+            </span>
+
+            <!-- (G) OPERATOR RARITY
+                change your operator's displayed rarity accordingly:
+                    yellow stars: on
+                    grey stars: off
+                currently, it is displaying 1 yellow star and 5 grey stars
+            -->
+            <div aria-description="operator rarity" class="rarity">
+                <i class="on    fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <div aria-description="operator archetype tags" class="archetypes">
+
+            <!-- (H) ARCHETYPE TAGS
+                (1) replace `tag 1` and `tag 2` with the archetype tags.
+
+                (2) if you would like to insert more than two tags, copy the following template
+                    and change `tag name` to what you wan to display. paste this where indicated
+
+                    <span class="tag" style="background: var(--accent2)">
+                        tag name
+                    </span>&nbsp;
+            -->
+            <span class="tag" style="background: var(--accent2)">
+                tag 1
+            </span>&nbsp;
+            <span class="tag" style="background: var(--accent2)">
+                tag 2
+            </span>&nbsp;
+            <!-- paste more tags below -->
+
+            <!-- do NOT paste past this line -->
+        </div>
+
+        <div aria-description="operator artist and CV" class="artInfo">
+            <span class="header">artist</span>
+                <!-- (I1) ARTIST
+                    change only the following line `Uncredited`
+                -->
+                Uncredited
+                <br />
+            <span class="header">CV</span>
+                <!-- (I2) CV
+                    change only the following line `Chris Pratt`
+                -->
+                Chris Pratt
+        </div>
+
+        <div aria-description="operator traits" class="traits">
+            <span class="header">Traits</span>
+            <!-- (J) OPERATOR TRAITS -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+
+        <div aria-description="operator quote" class="smallSection">
+            <div class="header">Operator Quote</div>
+            <blockquote style="border-left-color: var(--accent1)">
+                <!-- (K) OPERATOR QUOTE
+                    replace `Lorem ispum...` with your operator's token description
+                -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </blockquote>
+        </div>
+
+        <div aria-description="operator token" class="smallSection">
+            <div class="header">
+                <!-- (L1) OPERATOR TOKEN
+                    replace `doctor` with your operator's name
+                    - NOTE: do NOT have a space between `&#8217;` and your inserted name
+                -->
+                Doctor&#8217;s Token
+            </div>
+            <blockquote style="border-left-color: var(--accent1)">
+                <!-- (L2) OPERATOR TOKEN
+                    replace `Lorem ispum...` with your operator's token description
+                -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </blockquote>
+        </div>
+
+        <!-- (M) GENERAL PROFILE
+            when filling out the table, change only the text between `<td>` and `</td>`
+        -->
+        <table aria-description="general profile" style="margin-top: 50px;">
+            <tr>
+                <th>Gender</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Place of Birth</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Birthday</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Race</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td>???cm</td>
+            </tr>
+            <tr>
+                <th>Combat Experience</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Infection Status</th>
+                <td>???</td>
+            </tr>
+        </table>
+
+        <div class="subtitle">Technical</div>
+        
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <!-- (N) TECHNICAL OVERVIEW
+            when filling out the table, change only the text between `<td>` and `</td>`
+        -->
+        <table aria-description="technical profile">
+            <tr>
+                <th>Physical Strength</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Mobility</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Physiological Endurance</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Tactical Planning</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Combat Skill</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Originium Adaptability</th>
+                <td>???</td>
+            </tr>
+        </table>
+
+        <!-- (O) OPERATOR TALENTS
+            to add more talents, copy the following template and add it where indicated
+
+            <table aria-description="operator talents" style="margin-top: 10px;">
+                <tr aria-description="talent">
+                    <th aria-description="talent name" colspan="2">
+                        Talent Name
+                    </th>
+                </tr>
+                <tr>
+                    <th class="eliteLevel">E1</th>
+                    <td aria-description="talent description E1">
+                        Talent Description at E1
+                    </td>
+                </tr>
+                <tr>
+                    <th class="eliteLevel">E2</th>
+                    <td aria-description="talent description E2">
+                        Talent Description at E2
+                    </td>
+                </tr>
+            </table>
+        -->
+        <div class="smallerTitle">Talent</div>
+        <!-- TALENT 1 -->
+        <table aria-description="operator talents">
+            <tr aria-description="talent">
+                <th aria-description="talent name" colspan="2">
+                    Talent 1 Name
+                </th>
+            </tr>
+            <tr>
+                <th class="eliteLevel">E1</th>
+                <td aria-description="talent description E1">
+                    Talent 1 Description at E1
+                </td>
+            </tr>
+            <tr>
+                <th class="eliteLevel">E2</th>
+                <td aria-description="talent description E2">
+                    Talent 1 Description at E2
+                </td>
+            </tr>
+        </table>
+        <!-- paste additional talents below -->
+
+        <!-- do NOT paste paste this line -->
+
+        <div class="smallerTitle">Skills</div>
+        <!-- (P) OPERATOR TALENTS -->
+        <!-- SKILL 1 -->
+        <table aria-description="operator skills">
+            <tr aria-description="skill 1">
+                <th aria-description="skill 1 name" colspan="4">
+                    <!-- change skill name -->
+                    Skill 1: Skill Name
+                </th>
+            </tr>
+            <tr>
+                <td class="sp">SP Cost</th>
+                <td aria-description="SP cost" class="spdesc">
+                    <!-- change SP cost -->
+                    SP cost value
+                </td>
+                <td class="sp">SP Charge Type</th>
+                <td aria-description="SP charge type" class="spdesc">
+                    <!-- change SP Charge Type -->
+                    charge type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">Initial SP</th>
+                <td aria-description="initial SP" class="spdesc">
+                    <!-- change initial SP -->
+                    initial SP value
+                </td>
+                <td class="sp">Duration</th>
+                <td aria-description="duration" class="spdesc">
+                    <!-- change duration value -->
+                    xx seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 1 description" colspan="4">
+                    <!-- change skill description -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </td>
+            </tr>
+        </table>
+        <!-- SKILL 2 -->
+        <table style="margin-top: 10px;">
+            <tr aria-description="skill 2">
+                <th aria-description="skill 2 name" colspan="4">
+                    <!-- change skill name -->
+                    Skill 2: Skill Name
+                </th>
+            </tr>
+            <tr>
+                <td class="sp">SP Cost</th>
+                <td aria-description="SP cost" class="spdesc">
+                    <!-- change SP cost -->
+                    SP cost value
+                </td>
+                <td class="sp">SP Charge Type</th>
+                <td aria-description="SP charge type" class="spdesc">
+                    <!-- change SP Charge Type -->
+                    charge type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">Initial SP</th>
+                <td aria-description="initial SP" class="spdesc">
+                    <!-- change initial SP -->
+                    initial SP value
+                </td>
+                <td class="sp">Duration</th>
+                <td aria-description="duration" class="spdesc">
+                    <!-- change duration value -->
+                    xx seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 1 description" colspan="4">
+                    <!-- change skill description -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </td>
+            </tr>
+        </table>
+        <!-- SKILL 3 
+            to add in a third skill, uncomment the following code: -->
+        <!-- <table style="margin-top: 10px;">
+            <tr aria-description="skill 3">
+                <th aria-description="skill 3 name" colspan="4">
+                    Skill 3: Name
+                </th>
+            </tr>
+            <tr>
+                <td class="sp">
+                    SP Cost
+                </th>
+                <td aria-description="SP cost" class="spdesc">
+                    xx
+                </td>
+                <td class="sp">
+                    SP Charge Type
+                </th>
+                <td aria-description="SP charge type" class="spdesc">
+                    charge type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">
+                    Initial SP
+                </th>
+                <td aria-description="initial SP" class="spdesc">
+                    xx
+                </td>
+                <td class="sp">
+                    Duration
+                </th>
+                <td aria-description="duration" class="spdesc">
+                    xx seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 2 description" colspan="4">
+                    description
+                </td>
+            </tr>
+        </table> -->
+
+        <!-- (Q) RIIC BASE SKILLS -->
+        <div class="smallerTitle">RIIC Base Skills</div>
+        <table>
+            <tr>
+                <th class="baseSkillName">
+                    <!-- base skill name -->
+                    Base Skill Name
+                </th>
+                <td class="baseRoom"><strong>Room Type:</strong>
+                    <!-- room type-->
+                    Room Type
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- RIIC skill description -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </td>
+            </tr>
+        </table>
+        <!-- to add another RIIC base skill, uncomment the following code: -->
+        <!-- <table style="margin-top: 10px;">
+            <tr>
+                <th class="baseSkillName">
+                    Base Skill Name
+                </th>
+                <td class="baseRoom"><strong>Room Type:</strong>
+                    Room Type
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </td>
+            </tr>
+        </table> -->
+    
+        <div class="subtitle">Voice Lines</div>
+            
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <!-- (R) OPERATOR VOICE LINES -->
+        <table>
+            <tr>
+                <th>Appointed as Assistant</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk 3</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Promotion 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Promotion 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Trust Increase 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Trust Increase 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Trust Increase 3</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Idle</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Onboard</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Watching Battle Record</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Promotion 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Promotion 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Added to Squad</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Appointed as Squad Leader</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Begin Operation</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Selecting Operator 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Selecting Operator 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Deployment 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Deployment 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 1</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 2</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 3</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 4</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>4-star Result</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>3-star Result</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Sub 3-star Result</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Operation Failure</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Assigned to Facility</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Tap</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Trust Tap</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Greetings</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+        </table>
+
+        <!-- (S) ARCHIVE FILES
+            create a paragraph by sandwiching the text with `<p>` and `</p>`
+            for example, the following will display as two paragraphs with a space between them:
+
+            <p>hello world</p>
+            <p>this is another paragraph</p>
+
+            -
+
+            if you want to have a new line without a paragraph space, use `<br />`
+            for example, the following will display as two lines without no space between them:
+
+            <p>hello <br /> world</p>
+        -->
+        <div class="subtitle">Archive Files</div>
+            
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <div class="smallerTitle">Profile</div>
+        <div class="fileText">
+            <!-- (S1) PROFILE -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="smallerTitle">Clinical Analysis</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 25.</em></p>
+            
+            <!-- (S2) CLINICAL ANALYSIS --->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <p>[Cell-Originium Assimilation] xx%<br />
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <p>[Blood Originium-Crystal Density] xx&mu;/L<br />
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>In aliquam sem fringilla ut. Sit amet tellus cras adipiscing enim eu turpis egestas.<br />
+            &mdash;Operator Quote</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 1</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 50.</em></p>
+            
+            <!-- (S3) ARCHIVE FILE 1 --->
+            <p>[Originium Arts Overview]</p>
+
+            <p>Sit amet tellus cras adipiscing enim. Tellus orci ac auctor augue mauris augue
+                neque gravida. Euismod lacinia at quis risus sed vulputate odio ut. Sodales neque
+                sodales ut etiam sit amet nisl. Arcu non odio euismod lacinia at quis risus sed.
+                Mi eget mauris pharetra et ultrices. Dignissim diam quis enim lobortis scelerisque
+                fermentum dui.</p>
+
+            <p>Pretium fusce id velit ut. Tristique senectus et netus et malesuada fames ac turpis
+                egestas. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Mi quis
+                hendrerit dolor magna eget est lorem. Quam viverra orci sagittis eu volutpat odio.
+                Ornare arcu dui vivamus arcu felis bibendum. Est ante in nibh mauris cursus mattis.
+                Nibh mauris cursus mattis molestie a iaculis at. Massa id neque aliquam vestibulum
+                morbi blandit cursus.</p>
+            
+        </div>
+
+        <div class="smallerTitle">Archive File 2</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 100.</em></p>
+
+            <!-- (S4) ARCHIVE FILE 2 --->
+            <p>Sit amet tellus cras adipiscing enim. Tellus orci ac auctor augue mauris augue
+                neque gravida. Euismod lacinia at quis risus sed vulputate odio ut. Sodales neque
+                sodales ut etiam sit amet nisl. Arcu non odio euismod lacinia at quis risus sed.
+                Mi eget mauris pharetra et ultrices. Dignissim diam quis enim lobortis scelerisque
+                fermentum dui.</p>
+
+            <p>Pretium fusce id velit ut. Tristique senectus et netus et malesuada fames ac turpis
+                egestas. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Mi quis
+                hendrerit dolor magna eget est lorem. Quam viverra orci sagittis eu volutpat odio.
+                Ornare arcu dui vivamus arcu felis bibendum. Est ante in nibh mauris cursus mattis.
+                Nibh mauris cursus mattis molestie a iaculis at. Massa id neque aliquam vestibulum
+                morbi blandit cursus.</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 3</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 150.</em></p>
+
+            <!-- (S5) ARCHIVE FILE 3 --->
+            <p>Sit amet tellus cras adipiscing enim. Tellus orci ac auctor augue mauris augue
+                neque gravida. Euismod lacinia at quis risus sed vulputate odio ut. Sodales neque
+                sodales ut etiam sit amet nisl. Arcu non odio euismod lacinia at quis risus sed.
+                Mi eget mauris pharetra et ultrices. Dignissim diam quis enim lobortis scelerisque
+                fermentum dui.</p>
+
+            <p>Pretium fusce id velit ut. Tristique senectus et netus et malesuada fames ac turpis
+                egestas. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Mi quis
+                hendrerit dolor magna eget est lorem. Quam viverra orci sagittis eu volutpat odio.
+                Ornare arcu dui vivamus arcu felis bibendum. Est ante in nibh mauris cursus mattis.
+                Nibh mauris cursus mattis molestie a iaculis at. Massa id neque aliquam vestibulum
+                morbi blandit cursus.</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 4</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 200.</em></p>
+            
+            <!-- (S6) ARCHIVE FILE 4 --->
+            <p>Sit amet tellus cras adipiscing enim. Tellus orci ac auctor augue mauris augue
+                neque gravida. Euismod lacinia at quis risus sed vulputate odio ut. Sodales neque
+                sodales ut etiam sit amet nisl. Arcu non odio euismod lacinia at quis risus sed.
+                Mi eget mauris pharetra et ultrices. Dignissim diam quis enim lobortis scelerisque
+                fermentum dui.</p>
+
+            <p>Pretium fusce id velit ut. Tristique senectus et netus et malesuada fames ac turpis
+                egestas. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Mi quis
+                hendrerit dolor magna eget est lorem. Quam viverra orci sagittis eu volutpat odio.
+                Ornare arcu dui vivamus arcu felis bibendum. Est ante in nibh mauris cursus mattis.
+                Nibh mauris cursus mattis molestie a iaculis at. Massa id neque aliquam vestibulum
+                morbi blandit cursus.</p>
+        </div>
+
+        <div class="smallerTitle">Promotion File</div>
+        <div class="fileText">
+            <p><em>Upgrade to Elite LV2.</em></p>
+
+            <!-- (S7) PROMOTIONAL FILE --->
+            <p>Sit amet tellus cras adipiscing enim. Tellus orci ac auctor augue mauris augue
+                neque gravida. Euismod lacinia at quis risus sed vulputate odio ut. Sodales neque
+                sodales ut etiam sit amet nisl. Arcu non odio euismod lacinia at quis risus sed.
+                Mi eget mauris pharetra et ultrices. Dignissim diam quis enim lobortis scelerisque
+                fermentum dui.</p>
+
+            <p>Pretium fusce id velit ut. Tristique senectus et netus et malesuada fames ac turpis
+                egestas. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Mi quis
+                hendrerit dolor magna eget est lorem. Quam viverra orci sagittis eu volutpat odio.
+                Ornare arcu dui vivamus arcu felis bibendum. Est ante in nibh mauris cursus mattis.
+                Nibh mauris cursus mattis molestie a iaculis at. Massa id neque aliquam vestibulum
+                morbi blandit cursus.</p>
+        </div>
+        
+        <div class="subtitle">Gallery</div>
+        
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <div class="gallery">
+            <!-- (T) GALLERY 
+                (1) upload your image into the `images` folder. Please rename your image to fit the
+                    following format:    GALLERY_filename
+                    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
+
+                (2) replace `placeholder.png` with the file name from above
+
+                (3) to add more images, copy the following template and paste where indicated; repeat
+                    step (1) and (2)
+
+                    <img src="../images/placeholder.png" />
+            -->
+            <img src="../images/placeholder.png" />
+
+            <!-- paste more images to the gallery below-->
+
+            <!-- do NOT paste past this line -->
+        </div>
+
+    </div> <!-- mainBody div -->
+
+    <div class="mx-auto" id="footer">
+        <!-- (U) CREDITS
+            add all credits to yourself, additional artists, etc. here; places to insert names are
+            indicated with `_`
+        -->
+        <p><strong>Created with love by _
+        &nbsp;|&nbsp; Page by <a href="https://github.com/soupbara/">soupbara</a></strong></p>
+
+        <!-- ADD ADDITIONAL CREDITS HERE-->
+        <p>
+            Special thanks to: _
+        </p>
+        
+        <!-- DO NOT TOUCH ANYTHING PAST THIS LINE -->
+        <p>Rhodes Island Operator Directory is not affiliated with nor endorsed by Arknights, Hypergryph,
+        Studio Montagne, or Yostar.
+        <br />
+        All assets that are not original are courtesy of <a href="https://github.com/Aceship/AN-EN-Tags/">Aceship</a>,
+        and are the property of Hypergryph and Yostar.</p>
+
+    </div> <!-- footer DIV -->
+</div> <!-- container DIV -->
+
+</body>
+</html>

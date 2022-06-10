@@ -1,0 +1,17 @@
+body {
+    background: #13131B;
+    font: 11.5pt 'Roboto', Arial, sans-serif;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+#footer {
+    width: 90vw;
+    padding: 50px 0px 25px 0px;
+    color: gray;
+    font-size: 10pt;
+}
+
+#footer a {
+    color: #9c896c;
+}
