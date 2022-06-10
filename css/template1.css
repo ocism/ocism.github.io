@@ -183,10 +183,19 @@ th {
 
 .sp {
     width: 20%;
+    font-weight: 600;
 }
 
 .spdesc {
     width: 30%;
+}
+
+.baseSkillName {
+    width: 75%;
+}
+
+.baseRoom {
+    width: 25%;
 }
 
 #footer {
