@@ -14,29 +14,38 @@ blockquote {
 
 .navigation {
     background: #ffffff;
-    min-width: 100px;
+    min-width: 50px;
     padding: 10px;
     position: fixed;
     top: 10px;
     left: 10px;
-    font: 18pt 'Literata', Times, serif;
-    border-width: 5px;
-    border-style: solid;
+    font: 15pt 'Literata', Times, serif;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
     border-radius: 5px;
+    z-index: 99;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
 }
 
     .navLink {
         color: #000000;
         text-decoration: none;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
     }
 
     .navLink:hover {
         color: #000000;
-        opacity: 0.75;
+    }
+    
+    .navigation:hover:before {
+        content:"Rhodes Island Operator Directory";
+    }
+      
+    .navigation:hover span {
+        display: none;
     }
 
 
