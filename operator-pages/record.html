@@ -1,1 +1,948 @@
-<img src="../images/PLACEHOLDER_record.gif" alt="crouton">
+<!--
+TEMPLATE 1:
+    to see an example of this template filled out, look at `indigo.html`
+
+--
+
+Table of Contents:
+    - ctrl+f any of the following to find where it is located in the code
+
+(A) OPERATOR NAME
+(B) FAVICON
+(C) ADJUST ACCENT COLORS`
+(D) OPERATOR IMAGE
+(E) OPERATOR DESCRIPTION
+(F) OPERATOR NAME
+(G) OPERATOR RARITY
+(H) ARCHETYPE TAGS
+(I1) ARTIST, (I2) CV
+(J) OPERATOR TRAITS
+(K) OPERATOR QUOTE
+(L1) OPERATOR TOKEN [name], (L2) OPERATOR TOKEN [description]
+(M) GENERAL PROFILE
+(N) TECHNICAL OVERVIEW
+(O) OPERATOR TALENTS
+(P) OPERATOR TALENTS
+(Q) RIIC BASE SKILLS
+(R) OPERATOR VOICE LINES
+(S) ARCHIVE FILES
+(T) GALLERY
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- (A) OPERATOR NAME -->
+<title>Record</title>
+
+<!-- (B) FAVICON
+    change `../images/web/rhodes.png` to either:
+    - the URL of the image
+    - the file path of your image
+        - please place all images into the `images` folder
+        - the file path will be `../images/YOURFILENAME.png`
+    - NOTE: do not remove the quotes around the path-->
+<link rel="icon" type="image/x-icon" href="../images/web/rhodes.png">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/master.css">
+<link rel="stylesheet" type="text/css" href="../css/template1.css">
+<script type="text/javascript" src="js/script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400&family=Roboto&display=swap" rel="stylesheet"> 
+
+<script src="https://kit.fontawesome.com/fb25db8e8c.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<style type="text/css">
+
+/* (C) ADJUST ACCENT COLORS
+    change `#aeaeae` (accent1) and `#e4e4e4` (accent2) to your 
+    colors of choice; I recommend accent1 to be darker than accent2
+    - NOTE: change ONLY the hex color code (# followed by six characters)
+*/
+:root {
+    --accent1: #5c5cbfcd;
+    --accent2: #cbae89;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="../index.html" class="navLink">
+    <div class="navigation" style="
+        border-bottom-color: var(--accent1);
+    ">
+        <span>RI/OD</span>
+    </div>
+</a>
+
+<div id="wreathCont">
+    <div id="wreath">
+        <div class="mx-auto wreath1">
+            <div class="wreath2"></div>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+
+    <div class="mx-auto" id="mainBody" style="border-bottom-color: var(--accent1)">
+        <div aria-description="operator image" class="mx-auto" id="main-sprite">
+            <!-- (D) OPERATOR IMAGE
+                (1) upload your image into the `images` folder. Please rename your image to fit the
+                    following format:    E0_operatorname
+                    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
+
+                (2) in the following line, replace `doctor.webp` in the following line with your image 
+                    file name
+            -->
+            <img src="../images/THUMB_record.png" />
+
+            <div class="desc" style="
+                background-color: var(--accent1);
+            ">
+                <div style="background-color: var(--accent2)" class="header opHeader">Operator Description</div>
+                
+                <div aria-description="operator description" style="padding: 10px 20px;">
+                    <!-- (E) OPERATOR DESCRIPTION
+                        replace `Lorem ispum...` with your operator's description
+                    -->
+                    Record, a musician with exceptional potential in combat, will lend his aid by weaponizing his sound waves and his fists.
+                </div>
+            </div>
+        </div>
+
+        <div aria-description="operator name" id="opName">
+            <span style="float: left;">
+                <!-- (F) OPERATOR NAME
+                    replace `Operator Name` with your operator's name
+                -->
+                Record
+            </span>
+
+            <!-- (G) OPERATOR RARITY
+                change your operator's displayed rarity accordingly:
+                    yellow stars: on
+                    grey stars: off
+                currently, it is displaying 1 yellow star and 5 grey stars
+            -->
+            <div aria-description="operator rarity" class="rarity">
+                <i class="on    fas fa-star"></i>
+                <i class="on   fas fa-star"></i>
+                <i class="on   fas fa-star"></i>
+                <i class="on   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+                <i class="off   fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <div aria-description="operator archetype tags" class="archetypes">
+
+            <!-- (H) ARCHETYPE TAGS
+                (1) replace `tag 1` and `tag 2` with the archetype tags.
+
+                (2) if you would like to insert more than two tags, copy the following template
+                    and change `tag name` to what you wan to display. paste this where indicated
+
+                    <span class="tag" style="background: var(--accent2)">
+                        tag name
+                    </span>&nbsp;
+            -->
+            <span class="tag" style="background: var(--accent2)">
+                Fast-Redeploy
+            </span>&nbsp;
+            <span class="tag" style="background: var(--accent2)">
+                Specialist
+            </span>&nbsp;
+            <!-- paste more tags below -->
+
+            <!-- do NOT paste past this line -->
+        </div>
+
+        <div aria-description="operator artist and CV" class="artInfo">
+            <span class="header">artist</span>
+                <!-- (I1) ARTIST
+                    change only the following line `Uncredited`
+                -->
+                accident
+                <br />
+            <span class="header">CV</span>
+                <!-- (I2) CV
+                    change only the following line `Chris Pratt`
+                -->
+                Liu ZhaoKun (god i wish)
+        </div>
+
+        <div aria-description="operator traits" class="traits">
+            <span class="header">Traits</span>
+            <!-- (J) OPERATOR TRAITS -->
+            Deals damage to all targets within range
+        </div>
+
+        <div aria-description="operator quote" class="smallSection">
+            <div class="header">Operator Quote</div>
+            <blockquote style="border-left-color: var(--accent1)">
+                <!-- (K) OPERATOR QUOTE
+                    replace `Lorem ispum...` with your operator's token description
+                -->
+                Call on him for a listening ear.
+            </blockquote>
+        </div>
+
+        <div aria-description="operator token" class="smallSection">
+            <div class="header">
+                <!-- (L1) OPERATOR TOKEN
+                    replace `doctor` with your operator's name
+                    - NOTE: do NOT have a space between `&#8217;` and your inserted name
+                -->
+                Record&#8217;s Token
+            </div>
+            <blockquote style="border-left-color: var(--accent1)">
+                <!-- (L2) OPERATOR TOKEN
+                    replace `Lorem ispum...` with your operator's token description
+                -->
+                A worn-down MP3 player with earbuds wrapped around it. On it are various playlists and reminders.
+            </blockquote>
+        </div>
+
+        <!-- (M) GENERAL PROFILE
+            when filling out the table, change only the text between `<td>` and `</td>`
+        -->
+        <table aria-description="general profile" style="margin-top: 50px;">
+            <tr>
+                <th>Pronouns</th>
+                <td>He/Him</td>
+            </tr>
+            <tr>
+                <th>Place of Birth</th>
+                <td>Iberia</td>
+            </tr>
+            <tr>
+                <th>Birthday</th>
+                <td>September 12</td>
+            </tr>
+            <tr>
+                <th>Race</th>
+                <td>Liberi</td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td>180cm</td>
+            </tr>
+            <tr>
+                <th>Combat Experience</th>
+                <td>???</td>
+            </tr>
+            <tr>
+                <th>Infection Status</th>
+                <td>???</td>
+            </tr>
+        </table>
+
+        <div class="subtitle">Technical</div>
+        
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <!-- (N) TECHNICAL OVERVIEW
+            when filling out the table, change only the text between `<td>` and `</td>`
+        -->
+        <table aria-description="technical profile">
+            <tr>
+                <th>Physical Strength</th>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <th>Mobility</th>
+                <td>Standard</td>
+            </tr>
+            <tr>
+                <th>Physiological Endurance</th>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <th>Tactical Planning</th>
+                <td>Standard</td>
+            </tr>
+            <tr>
+                <th>Combat Skill</th>
+                <td>Standard</td>
+            </tr>
+            <tr>
+                <th>Originium Adaptability</th>
+                <td>Normal</td>
+            </tr>
+        </table>
+
+        <!-- (O) OPERATOR TALENTS
+            to add more talents, copy the following template and add it where indicated
+
+            <table aria-description="operator talents" style="margin-top: 10px;">
+                <tr aria-description="talent">
+                    <th aria-description="talent name" colspan="2">
+                        Talent Name
+                    </th>
+                </tr>
+                <tr>
+                    <th class="eliteLevel">E1</th>
+                    <td aria-description="talent description E1">
+                        Talent Description at E1
+                    </td>
+                </tr>
+                <tr>
+                    <th class="eliteLevel">E2</th>
+                    <td aria-description="talent description E2">
+                        Talent Description at E2
+                    </td>
+                </tr>
+            </table>
+        -->
+        <div class="smallerTitle">Talent</div>
+        <!-- TALENT 1 -->
+        <table aria-description="operator talents">
+            <tr aria-description="talent">
+                <th aria-description="talent name" colspan="2">
+                    Curtain Fall
+                </th>
+            </tr>
+            <tr>
+                <th class="eliteLevel">E1</th>
+                <td aria-description="talent description E1">
+                    25% Physical Dodge for himself and the operator deployed right before him.
+                </td>
+            </tr>
+            <tr>
+                <th class="eliteLevel">E2</th>
+                <td aria-description="talent description E2">
+                    50% Physical Dodge for himself and the operator deployed right before him.
+                </td>
+            </tr>
+        </table>
+        <!-- paste additional talents below -->
+
+        <!-- do NOT paste paste this line -->
+
+        <div class="smallerTitle">Skills</div>
+        <!-- (P) OPERATOR TALENTS -->
+        <!-- SKILL 1 -->
+        <table aria-description="operator skills">
+            <tr aria-description="skill 2">
+                <th aria-description="skill 2 name" colspan="2">
+                    <!-- change skill name -->
+                    Skill 1: Early Bird
+                </th>
+                <td class="sp">Skill Activation</th>
+                <td aria-description="SP cost" class="spdesc">
+                    <!-- skill activation-->
+                    Auto Trigger
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">SP Cost</th>
+                <td aria-description="SP cost" class="spdesc">
+                    <!-- change SP cost -->
+                    SP cost value
+                </td>
+                <td class="sp">SP Charge Type</th>
+                <td aria-description="SP charge type" class="spdesc">
+                    <!-- change SP Charge Type -->
+                    Auto Recover
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">Initial SP</th>
+                <td aria-description="initial SP" class="spdesc">
+                    <!-- change initial SP -->
+                    initial SP value
+                </td>
+                <td class="sp">Duration</th>
+                <td aria-description="duration" class="spdesc">
+                    <!-- change duration value -->
+                    xx seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 1 description" colspan="4">
+                    <!-- change skill description -->
+                    +20 ASPD
+                </td>
+            </tr>
+        </table>
+        <!-- SKILL 2 -->
+        <table style="margin-top: 10px;">
+            <tr aria-description="skill 2">
+                <th aria-description="skill 2 name" colspan="2">
+                    <!-- change skill name -->
+                    Skill 2: Catching Worms
+                </th>
+                <td class="sp">Skill Activation</th>
+                <td aria-description="SP cost" class="spdesc">
+                    <!-- skill activation-->
+                    oh fuck
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">SP Cost</th>
+                <td aria-description="SP cost" class="spdesc">
+                    <!-- change SP cost -->
+                    SP cost value
+                </td>
+                <td class="sp">SP Charge Type</th>
+                <td aria-description="SP charge type" class="spdesc">
+                    <!-- change SP Charge Type -->
+                    charge type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">Initial SP</th>
+                <td aria-description="initial SP" class="spdesc">
+                    <!-- change initial SP -->
+                    initial SP value
+                </td>
+                <td class="sp">Duration</th>
+                <td aria-description="duration" class="spdesc">
+                    <!-- change duration value -->
+                    20 seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 1 description" colspan="4">
+                    <!-- change skill description -->
+                    -20 ASPD; All adjacent allied operators will increase ASPD by +40 for 15 seconds.
+                </td>
+            </tr>
+        </table>
+        <!-- SKILL 3 
+            to add in a third skill, uncomment the following code: -->
+        <!-- <table style="margin-top: 10px;">
+            <tr aria-description="skill 3">
+                <th aria-description="skill 3 name" colspan="2">
+                    Skill 3: Name
+                </th>
+                <td class="sp">Skill Activation</th>
+                <td aria-description="SP cost" class="spdesc">
+                    activation type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">
+                    SP Cost
+                </th>
+                <td aria-description="SP cost" class="spdesc">
+                    xx
+                </td>
+                <td class="sp">
+                    SP Charge Type
+                </th>
+                <td aria-description="SP charge type" class="spdesc">
+                    charge type
+                </td>
+            </tr>
+            <tr>
+                <td class="sp">
+                    Initial SP
+                </th>
+                <td aria-description="initial SP" class="spdesc">
+                    xx
+                </td>
+                <td class="sp">
+                    Duration
+                </th>
+                <td aria-description="duration" class="spdesc">
+                    xx seconds
+                </td>
+            </tr>
+            <tr>
+                <td aria-description="skill 2 description" colspan="4">
+                    description
+                </td>
+            </tr>
+        </table> -->
+
+        <!-- (Q) RIIC BASE SKILLS -->
+        <div class="smallerTitle">RIIC Base Skills</div>
+        <table>
+            <tr>
+                <th class="baseSkillName">
+                    <!-- base skill name -->
+                    Vibing
+                </th>
+                <td class="baseRoom"><strong>Room Type:</strong>
+                    <!-- room type-->
+                    Factory
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- RIIC skill description -->
+                    When this operator is assigned to a factory with poisonous snake operators, productivity +50%.
+                </td>
+            </tr>
+        </table>
+        <!-- to add another RIIC base skill, uncomment the following code: -->
+        <!-- <table style="margin-top: 10px;">
+            <tr>
+                <th class="baseSkillName">
+                    Base Skill Name
+                </th>
+                <td class="baseRoom"><strong>Room Type:</strong>
+                    Room Type
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </td>
+            </tr>
+        </table> -->
+    
+        <div class="subtitle">Voice Lines</div>
+            
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <!-- (R) OPERATOR VOICE LINES -->
+        <table>
+            <tr>
+                <th>Appointed as Assistant</th>
+                <td>
+                    Hey, Doctor! Did you call for me? What would you like me to do? </td>               </td>
+            </tr>
+            <tr>
+                <th>Talk 1</th>
+                <td>
+                    Let me know if you need any help. I'll be just around the corner.
+                </td>
+            </tr>
+            <tr>
+                <th>Talk 2</th>
+                <td>
+                    Life is a piece performed only once. Liven up! Enjoy your time here! Drink a few test vials from our medics! The results may surprise you.</td>
+            </tr>
+            <tr>
+                <th>Talk 3</th>
+                <td>
+                    I wasn’t the one that started it. …Okay, maybe I encouraged some of the chaos, but I’ll clean up the mess—I promise!</td>
+            </tr>
+            <tr>
+                <th>Talk after Promotion 1</th>
+                <td>
+                    Please quell the tension, or else I might have to do it myself. How? By beatboxing, of course!
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Promotion 2</th>
+                <td>
+                    Work hard, Doctor. Motivation is but a fleeting emotion, but discipline will carry you until the end. Haha, I got serious for a moment, didn't I?
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Trust Increase 1</th>
+                <td>
+                    Your conviction is admirable, you know. It reminds me of how rewarding it feels to have a purpose. Eh? My purpose? Isn’t it obvious?
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Trust Increase 2</th>
+                <td>
+                    Mm… Doctor, you mustn’t forget to take breaks. Burnout is a real mood killer, you know. Actually, let's take one right now! Hahaha!
+                </td>
+            </tr>
+            <tr>
+                <th>Talk after Trust Increase 3</th>
+                <td>
+                    You want me to perform for you? Doctor, you know that I have given up the stage for years now. I’ll think about it, though. A private performance, for an audience of one. Wouldn’t that be nice? ...Hah, but that’s left for the past.
+                </td>
+            </tr>
+            <tr>
+                <th>Idle</th>
+                <td>
+                    Is the Doctor on break? I wonder what would happen if I swapped inks with…
+                </td>
+            </tr>
+            <tr>
+                <th>Onboard</th>
+                <td>
+                    Record Scratch, ready at the wave of your hand. Life is short, so let's enjoy what we can before orders are given!
+                </td>
+            </tr>
+            <tr>
+                <th>Watching Battle Record</th>
+                <td>
+                    Ohhh, so that's how it works. Can we go over that one more time?
+                </td>
+            </tr>
+            <tr>
+                <th>Promotion 1</th>
+                <td>
+                    What a surprise! This will be pretty handy for lifting more equipment to the medics.
+                </td>
+            </tr>
+            <tr>
+                <th>Promotion 2</th>
+                <td>
+                    Oh? Haha, Doctor, let me carry that for you. Thanks to you, my skills have sharpened greatly since I've arrived. Let's enjoy what time we have left together. Next meal's on me!
+                </td>
+            </tr>
+            <tr>
+                <th>Added to Squad</th>
+                <td>
+                    Me? Yessir, at your command. After this, I'll bring the supplies back.
+                </td>
+            </tr>
+            <tr>
+                <th>Appointed as Squad Leader</th>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <td>
+                    Ready to depart!
+                </td>
+            </tr>
+            <tr>
+                <th>Begin Operation</th>
+                <td>
+                    Here's our cue!
+                </td>
+            </tr>
+            <tr>
+                <th>Selecting Operator 1</th>
+                <td>
+                    At your beck and call.
+                </td>
+            </tr>
+            <tr>
+                <th>Selecting Operator 2</th>
+                <td>
+                    Time for training to pay off!
+                </td>
+            </tr>
+            <tr>
+                <th>Deployment 1</th>
+                <td>
+                    No one’s hurt yet, right?
+                </td>
+            </tr>
+            <tr>
+                <th>Deployment 2</th>
+                <td>
+                    Oya, it's my turn!
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 1</th>
+                <td>
+                    Eyes on me!
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 2</th>
+                <td>
+                    Avert your gaze!
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 3</th>
+                <td>
+                    Rewind, rewind…!
+                </td>
+            </tr>
+            <tr>
+                <th>In Battle 4</th>
+                <td>
+                    Caduceus, keep low!
+                </td>
+            </tr>
+            <tr>
+                <th>4-star Result</th>
+                <td>
+                    Another task completed. I’ll wander back to base, if you don’t mind.
+                </td>
+            </tr>
+            <tr>
+                <th>3-star Result</th>
+                <td>
+                    No encore from the enemy… Say, can we buy sweets on the way back?
+                </td>
+            </tr>
+            <tr>
+                <th>Sub 3-star Result</th>
+                <td>
+                    Well, it’s done and over with. Do you need me to carry anything?
+                </td>
+            </tr>
+            <tr>
+                <th>Operation Failure</th>
+                <td>
+                    Doctor, do I need to bring anyone to the medics? Ah, don’t worry about me.
+                </td>
+            </tr>
+            <tr>
+                <th>Assigned to Facility</th>
+                <td>
+                    I’m ready when you are. Ah, could you turn on the lights?
+                </td>
+            </tr>
+            <tr>
+                <th>Tap</th>
+                <td>
+                   Hm?
+                </td>
+            </tr>
+            <tr>
+                <th>Trust Tap</th>
+                <td>
+                    Ahah, Doctor, you’re getting awfully close!
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th>Greetings</th>
+                <td>
+                    Hey, Doctor! Did you call me here for work or for entertainment?
+                </td>
+            </tr>
+        </table>
+
+        <!-- (S) ARCHIVE FILES
+            create a paragraph by sandwiching the text with `<p>` and `</p>`
+            for example, the following will display as two paragraphs with a space between them:
+
+            <p>hello world</p>
+            <p>this is another paragraph</p>
+
+            -
+
+            if you want to have a new line without a paragraph space, use `<br />`
+            for example, the following will display as two lines without no space between them:
+
+            <p>hello <br /> world</p>
+        -->
+        <div class="subtitle">Archive Files</div>
+            
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <div class="smallerTitle">Profile</div>
+        <div class="fileText">
+            <!-- (S1) PROFILE -->
+            <p>This operator showed up one day at the office as Record Scratch, requesting to join and be hired. 
+                Despite his lack of previous experience, his determination to learn how to fight has landed him a 
+                spot in the reserve operators’ list. He displayed an unfaltering willingness to adapt to a new 
+                lifestyle as an operator for Rhodes Island. An investigation shows potential in his physical and 
+                mental capabilities, proving him worthy of joining our cause as a soldier and possible test subject.</p>
+        </div>
+
+        <div class="smallerTitle">Clinical Analysis</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 25.</em></p>
+            
+            <!-- (S2) CLINICAL ANALYSIS --->
+            <p>Imaging tests reveal blurry outlines of this operator's internal organs, clouded with abnormal dark 
+                spots. His circulatory system shows an abnormally high rate of Originium particulate matter, with 
+                other signs of Oripathy infection, we can confirm that the operator is indeed Infected. He doesn't 
+                seem too bothered by this, though.</p>
+            
+            <p>[Cell-Originium Assimilation] 0.7%<br />
+                Operator Record has no visible Originium crystallization on his body's surface. However, three dark 
+                streaks up the side of his hip may be attributed to Originium-based scars.</p>
+
+            <p>[Blood Originium-Crystal Density] 0.26&mu;/L<br />
+                Operator Record’s infection has been stabilized. Again, he seemed quite nonchalant about this and 
+                thanked the doctors on his way out.</p>
+
+            <p>oh fuck what do i write here<br />
+            &mdash;Operator Quote</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 1</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 50.</em></p>
+            
+            <!-- (S3) ARCHIVE FILE 1 --->
+            <p>[Originium Arts Overview]</p>
+
+            <p>“His vibrant clothing and constant smile brought an upbeat atmosphere to our base, and he quickly 
+                began chatting with other operators as soon as he arrived. Some operators regarded him with 
+                distrust and uneasiness, but he shows no ill will with the information he learned about the others. 
+                He seemed to gravitate towards people who become engrossed in their work, such as operators 
+                dedicated to taking care of cats, an operator with a passion for literature, and another operator 
+                interested in accumulating an arsenal of weapons. He never talked about himself, though, and when 
+                I questioned it, he laughed it off and told me that he had a musical background, but won’t elaborate.</p>
+
+            <p>“A very strange operator, but nonetheless one you can rely on, whether it’s to talk to or to assign 
+                him to tasks. He’s helpful around the medics and researchers, always offering to do heavy lifting 
+                when he’s not training. Sometimes, he asks about our research, and while most of it sounds boring, 
+                he listens intently and seems to remember for the next conversation. There is genuinity in him, but 
+                still, I don’t feel as if I can trust him fully.”</p>
+            
+            &mdash;A researcher near the base</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 2</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 100.</em></p>
+
+            <!-- (S4) ARCHIVE FILE 2 --->
+            <p>It's quite strange. Record was reported to have a very strict regiment; 06:00 to wake, and 22:00 to 
+                bed. His routine is marked by the clock, from training to eating to working. Anyone could see that 
+                he did everything to the best of his ability, even if it was difficult to see his eyes through his 
+                sunglasses.</p>
+
+            <p>That's not the strange part. The really weird part is how in TERRA does someone like him keep such 
+                a rigid schedule!? Operators have seen him sponge-skate down the hallway, switch out sugar for salt, 
+                and replace perfectly good pie filling with toothpaste. There were also numerous reports about 
+                Operator Record enabling dangerous behavior such as burning down another operators' headquarters. 
+                When questioned, he only shrugged and said he helped calculate the medical bills and damage costs 
+                if they really went forward with their idea, and that he had no other part in carrying out the plan. 
+                Ridiculous! Such lack of self restraint seems so uncharacteristic of him!</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 3</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 150.</em></p>
+
+            <!-- (S5) ARCHIVE FILE 3 --->
+            <p>Record Scratch. Noun. The sound of a phonograph needle scraping against a record, causing an interruption 
+                and calling immediate attention. </p>
+
+            <p>Record Scratch. Proper noun. An operator who has mastered the art of interrupting people who pry about his 
+                past by calling immediate attention to the present.</p>
+
+            <p>We found an old pamphlet with an image of a young musician holding a violin. The pages were practically 
+                falling apart, but the "Allen Bach" in large font was unmistakable. At first, we thought it was one of his 
+                relatives, or a sibling perhaps, because he had never talked about his family before. Lots of performances 
+                showed up when we looked up the name. He had nicknames such as "rising star" and "natural talent", but the 
+                most bizarre news that showed up said "Disappearance of Allen Bach." His last performance scheduled was 
+                never heard. Apparently, he didn't even show up. We would have read more if we weren't suddenly jump scared 
+                by Record's sudden appearance in our office.</p>
+            <p>'I was looking for papers for Finn, but I see that you found some private information.'</p>
+
+            <p>We weren't sure if he was upset (it's hard to tell through those sunglasses!), so we tried apologizing, but 
+                he waved it off.</p>
+            <p>'That's in the past now. Allen Bach doesn't play anymore. Ah, you're so tense! Relax a bit! Life's too 
+                short to get hung up on something like this!'</p>
+            <p>We were stunned silent as he beatboxed on his way out.</p>
+        </div>
+
+        <div class="smallerTitle">Archive File 4</div>
+        <div class="fileText">
+            <p><em>Increase Trust to 200.</em></p>
+            
+            <!-- (S6) ARCHIVE FILE 4 --->
+            <p>"Is this thing recording? Testing, one, two, th— ow! Why'd I get smacked!? I've always wanted to do this! 
+                Let me have this, just once!</p>
+
+            <p>"Ahem. I was one of the investigators that looked into Operator A— Record's history. We wanted to learn 
+                more about him properly this time, without snooping around and all that. Wait, this still sounds like we 
+                were snooping. We weren't!"</p>
+
+            <p>There's an awkward cough.</p>
+
+            <p>"I-I didn't really want to pry into his past anymore after that incident. What I was in charge of was 
+                finding out if he was a detriment to our operation, put bluntly and simply. After all, usually people 
+                who have a past to hide can't be fully trusted, especially if they can maneuver out of it skillfully.</p>
+
+            <p>"On my way to the kitchen, I saw him pouring salt into the correct container and filling up the fridge 
+                with various frozen vegetables and meat; when I asked what he was doing, he offhandedly mentioned an 
+                operator who frequented the kitchen said that they were running low. </p>
+
+            <p>"Curious, I asked him why there were rumors about him being okay with his fellow operators being 
+                endangered if he was willing to go out of his way to restock food for them. He probably sensed that 
+                I was looking for a serious answer or else I wouldn't leave him alone. It still surprised me that he 
+                replied with what seemed like so much sincerity that it almost felt uncharacteristic of him.</p>
+
+            <p>'"When people set their mind to something, they'll do anything they can to achieve that goal,' he said. 
+                All I can do is remind them of the consequences and be there if they need to be carried back to the 
+                emergency room. And even then that's not guaranteed! But most people I talk to already knew that.'</p>
+
+            <p>"I wanted to know what kinds of goals he had, but he laughed it off and said it was to get some lunch 
+                for a medic friend. While he walked away, it made me think a bit; I can't say I completely agree with 
+                him, but he doesn't strike me as an individual who would purposefully let others get hurt. After all, 
+                he did write up a rather detailed medical bill detailing injuries that could be sustained. He must 
+                have paid very close attention to those medic operators who rambled on about boring medical stuff.</p>
+
+            <p>"Well, case closed, then. Operator Record is not a harmful individual. We'll keep an eye on him, though."</p>
+
+            <p></p>&mdash;A recording from the HR department</p>
+        </div>
+
+        <div class="smallerTitle">Promotion File</div>
+        <div class="fileText">
+            <p><em>Upgrade to Elite LV2.</em></p>
+
+            <!-- (S7) PROMOTIONAL FILE --->
+            <p>oh fuck</p>
+
+            <p>i didn't write this yet</p>
+        </div>
+        
+        <div class="subtitle">Gallery</div>
+        
+        <div class="divider" style="background: var(--accent1)"></div>
+
+        <div class="gallery">
+            <!-- (T) GALLERY 
+                (1) upload your image into the `images` folder. Please rename your image to fit the
+                    following format:    GALLERY_filename
+                    - accepted file formats: .png, .webp, .jpg, .jpeg, .gif
+
+                (2) replace `placeholder.png` with the file name from above
+
+                (3) to add more images, copy the following template and paste where indicated; repeat
+                    step (1) and (2)
+
+                    <img src="../images/placeholder.png" />
+            -->
+            <img src="../images/THUMB_record.png" />
+            <img src="../images/PLACEHOLDER_record.gif" />
+
+            <!-- paste more images to the gallery below-->
+
+            <!-- do NOT paste past this line -->
+        </div>
+
+    </div> <!-- mainBody div -->
+
+    <div class="mx-auto" id="footer">
+        <!-- (U) CREDITS
+            add all credits to yourself, additional artists, etc. here; places to insert names are
+            indicated with `_`
+        -->
+        <p><strong>Created with love by _
+        &nbsp;|&nbsp; Page by <a href="https://github.com/soupbara/">soupbara</a></strong></p>
+
+        <!-- ADD ADDITIONAL CREDITS HERE-->
+        <p>
+            Special thanks to: starsknice who loves their blorbo very dearly
+        </p>
+        
+        <!-- DO NOT TOUCH ANYTHING PAST THIS LINE -->
+        <p>Rhodes Island Operator Directory is not affiliated with nor endorsed by Arknights, Hypergryph,
+        Studio Montagne, or Yostar.
+        <br />
+        All assets that are not original are courtesy of <a href="https://github.com/Aceship/AN-EN-Tags/">Aceship</a>,
+        and are the property of Hypergryph and Yostar.</p>
+
+    </div> <!-- footer DIV -->
+</div> <!-- container DIV -->
+
+</body>
+</html>
